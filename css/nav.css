@@ -17,6 +17,7 @@ header {
 }
 nav{
 	display: flex;
+	overflow: hidden;
 }
 ul{
 	margin-left: 9%;
@@ -32,6 +33,7 @@ li a{
 	padding-right: 12px;
 	padding-bottom: 17px;
 	font-size: 18px;
+	transition: 0.5s;
 }
 li a:hover{
 	background: white;
