@@ -1,9 +1,22 @@
 /* CSS Document */
-
-.carousel {
-height:900px;
+.carousel-caption {
+	bottom: 5%;
+	color: white;
+	padding: 0;
 }
-
-.carousel-item img {
-height:900px;
+.carousel-caption p{
+	font-size: 1.8em;
+	font-family: 'Libre Baskerville', serif;
+	padding: 10px;
+	background-color: rgba(6,1,1,0.45);
+}
+.slider_btn{
+	float: right;
+	width: 220px;
+	height: 50px;
+	background-color: #2190d7;
+	color: white;
+	padding: 14px;
+	margin-top: 20px;
+	border: 1px #a3a3a3 solid;
 }
