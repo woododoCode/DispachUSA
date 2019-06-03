@@ -1,0 +1,40 @@
+/* CSS Document */
+
+.advantages{
+	font-family: Helvetica, 'sans-serif';
+	color: black;
+	background-color: white;
+	text-align: center;
+}
+.header_adv{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	color: #0077c2;
+	font-weight: 600;
+}
+.adv_card{
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.18);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.18);
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.18);
+	margin: 15px;
+	width: 255px;
+	padding-bottom: 45px;
+	transition: 0.5s;
+}
+.adv_card:hover{
+	-webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+	-webkit-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.18);
+	-moz-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.18);
+	box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.18);
+}
+.adv_card h3{
+	margin-top: 22px;
+}
+.adv_card p{
+	margin-top: 35px;
+}
+.adv_card img{
+	margin-top: 40px;
+}

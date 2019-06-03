@@ -5,6 +5,7 @@ li {
 	list-style: none;
 }
 header {
+	font-family: Helvetica,"sans-serif";
 	background-image: linear-gradient(to right, #002358, #003686);
 	height: 60px;
 }
