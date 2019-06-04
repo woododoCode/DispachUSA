@@ -1,0 +1,17 @@
+/* CSS Document */
+a{
+	border: 1px #327ADC solid;
+	border-radius: 10px;
+	height: 85px;
+	background-color: #158fcc;
+	justify-content: 
+}
+a img{
+	float: left;
+}
+a span {
+	padding: 10px;
+	margin-left: 10px;
+	color: white;
+	float: right;
+}
