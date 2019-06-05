@@ -1,0 +1,13 @@
+/* CSS Document */
+footer{
+	background-color: #002358;
+	height: 100px;
+	padding-top: 40px;
+}
+
+footer a{
+	color: white;
+	text-align: center;
+	margin-right: 10px;
+	font-size: 14px;
+}
