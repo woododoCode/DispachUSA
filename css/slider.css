@@ -23,7 +23,7 @@
 	transition: 0.5s;
 }
 .slider_btn:hover{
-	border: none;
+	border: 1px white solid;
 	background-color: white;
 	color: #1e4b8e;
 }

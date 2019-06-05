@@ -17,6 +17,19 @@
 	font-size: 0.9em;
 }
 .how_to button{
-	align-content: center;
-
+	position: relative;
+	left: 35%;
+	height: 50px;
+	background-color: #2190d7;
+	color: white;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 45px;
+	border: 1px #a3a3a3 solid;
+	transition: 0.5s;	
+}
+.how_to button:hover{
+	border:1px white solid;
+	background-color: white;
+	color: #1e4b8e;
 }
