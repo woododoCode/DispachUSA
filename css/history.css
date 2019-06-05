@@ -1,0 +1,23 @@
+/* CSS Document */
+
+.history{
+	margin-top: 25px;
+	display: inline-flex;
+}
+.history h4{
+	
+	background-color: #2090d6;
+	font-size: 2.3em;
+	color: white;
+	padding: 5px;
+	margin-left: 55px;
+	margin-right: 105px;
+}
+.history_text{
+	width: 50%;
+	margin-right: 10px;
+	margin-top: 95px;
+}
+.history_video{
+	width: 50%;
+}

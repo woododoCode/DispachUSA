@@ -19,8 +19,13 @@
 	<link rel="stylesheet" href="css/slider.css">
 	<link rel="stylesheet" href="css/advantages.css">
 	<link rel="stylesheet" href="css/price.css">
+	<link rel="stylesheet" href="css/history.css">
+	<link rel="stylesheet" href="css/how_to.css">
 </head>
 <body>
+	
+	<!-- Navigation -->
+	
 	<header>
 		<nav class="main__nav">
 			<div class="logo">
@@ -51,7 +56,9 @@
 			</ul>
 		</nav>
 	</header>
+	
 	<!--Header slider-->
+	
 	<section>
 		<div id="header_carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="hover" data-interval="4000">
 			<!--<ol class="carousel-indicators">
@@ -103,6 +110,7 @@
 			</a>
 		</div>
 	</section>
+	
 	<!--Advantages-->
 	
 	<section class="advantages">
@@ -114,23 +122,23 @@
 			</div>
 			<div class="row">
 				<div class="adv_card">
-					<img src="img/advantages/adv_1.png" alt="">
+					<img src="img/advantages/adv_1.png" alt="best companies">
 					<h3>Best companies</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 				<div class="adv_card">
-						<img src="img/advantages/adv_2.png" alt="">
+						<img src="img/advantages/adv_22.png" alt="solutions">
 					<h3>Global solutions</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 				<div class="adv_card">
-					<img src="img/advantages/adv_3.png" alt="">
-					<h3>Quick reaction</h3>
+					<img src="img/advantages/adv_3.png" alt="reaction">
+					<h3>Quick<br>reaction</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 				<div class="adv_card">
-					<img src="img/advantages/adv_4.png" alt="">
-					<h3>Professioanl&nbsp;support</h3>
+					<img src="img/advantages/adv_4.png" alt="support">
+					<h3>Professioanl support</h3>
 					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 			</div>
@@ -138,22 +146,79 @@
 	</section>
 	
 	<!-- Price form -->
-	<section class="price">
-		<div class="container">
-			<div class="col">
-				<div class="col-xl-4">
-					<a href="#" class="price_btn" role="button"><img src="img/price/boat.png" alt="boat"><span>Boat</span></a>
-				</div>
-				<div class="col-xl-4">
-					<a href="#" class="price_btn " role="button"><img src="img/price/car.png" alt="Car"><span>Car</span></a>
-				</div>
-				<div class="col-xl-4">
-					<a href="#" class="price_btn " role="button"><img src="img/price/cargo.png" alt="Cargo"><span>Cargo</span></a>
+	
+	<section class="price container">
+		<div>
+			<h3 class="header_adv">Average Price</h3>
+			<p>To determine approximate cost, select the type of cargo</p>
+		</div>
+		<div class="col-xl-12 d-inline-flex">
+			<div class="price_btn">
+				<button href="#" role="button"><img src="img/price/boat.png" alt="boat"><span>Boat</span></button>
+				<button href="#" role="button"><img src="img/price/car.png" alt="Car"><span>Car</span></button>
+				<button href="#" role="button"><img src="img/price/cargo.png" alt="Cargo"><span>Cargo</span></button>
+			</div>
+			<div class="price_form">	
+				<p>Enter ZIP code of dispatch and ZIP code of delivery</p>
+				<div class="form-group">
+      		<label for="start">ZIP from:</label>
+					<select class="form-control" id="start" name="sellist1"></select>
+					<label for="destination">ZIP to:</label>
+					<select class="form-control" id="destination" name="sellist1"></select>
+					<div class="price_calc">
+						<div>
+							<p>Miles</p><span class="right">120</span>
+						</div>
+						<div>
+							<p>Cost of a mile</p><span class="right">$3</span>
+						</div>
+						<div>
+							<p><b>Estimated Shipping Cost</b></p><span class="right"><b>$360</b></span>
+						</div>
+					</div>
+					
 				</div>
 			</div>
+			<div class="map">
+				<img src="img/price/map.png" alt="map">
+			</div>
 		</div>
+		
 	</section>
+	
+	<!-- History of success -->
+	
+	<div class="container ">
+		<h3 class="header_adv">History of success</h3>
+		<div class="col-xl-12 history">
+			<div class="history_text">
+				<h4>What is Lorem ipsum?</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat veniam possimus et impedit soluta sunt, animi, quo eveniet reprehenderit, eligendi labore! Ab dignissimos nemo impedit ut pariatur quidem dolor explicabo ipsa odio laborum molestiae, numquam, laudantium animi et similique libero, nisi magni. Nemo, dolorum! Modi officiis, magnam perferendis sequi facilis.</p>
+			</div>
+			<div class="history_video">
+				<img src="img/history/video.png" alt="video">
+			</div>		
+		</div>
+	</div>
 
+	<section class="how_to">
+		<div class="container">
+			<div class="row">
+				<div class="d-flex">
+					<div class="col-xl-6">
+						<h4>How our site makes it easier to find a carrier</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad, sequi delectus alias reiciendis aliquid velit atque illo, iusto molestias ullam distinctio architecto minima totam!</p>
+						<button>See presentation</button>
+					</div>
+					<div class="col-xl-6">
+						<h4 class="">How our site makes it easier to find a carrier</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad, sequi delectus alias reiciendis aliquid velit atque illo, iusto molestias ullam 		distinctio architecto minima totam!</p>
+						<button>See presentation</button>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
 		<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
