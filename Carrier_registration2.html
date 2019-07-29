@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DispatchUSA</title>
+<!--	Bootstrap css-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!--Font awesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<!--owl carousel-->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.css">
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<!--User css-->
+<link rel="stylesheet" href="css/registration.css">
+<!--Fonts-->
+<link rel="stylesheet" href="fonts/Kefa-Regular.TTF">
+<!-- Datepicker-->
+
+</head>
+
+<body>
+<div class="col-md-12 registration_header text-center">Register Form for Carrier</div>
+<div class="col-md-12 d-flex">
+	<div class="container col-md-10">
+		<h5 class="mb-1 mt-4">Operation Authority and Document Packet (Authirity, W-9, Ect.)</h5>
+		<form>
+			<!--??????????-->
+			<div class="form-group col-12 row">
+				<label for="icc-mc" class="col-md-2 col-form-label">ICC-MC#</label>
+				<div class="col-md-10">
+					<input id="icc-mc" name="icc-mc" placeholder="" type="text" required="required" class="form-control">
+				</div>
+			</div>
+			<div class="form-group col-12 row">
+				<label for="dot" class="col-md-2 col-form-label">DOT#</label>
+				<div class="col-md-10">
+					<input id="dot" name="dot" placeholder="" type="text" required="required" class="form-control">
+				</div>
+			</div>
+			<!--Reference Information-->
+			<h5 class="mb-1 mt-4">Reference Information</h5>
+			<div class="form-group col-12 row">
+				<label for="company_description" class="col-md-2 col-form-label">Company Description</label>
+				<div class="col-md-10">
+					<textarea id="company_description" name="company_description"  rows="1" class="form-control"></textarea>
+				</div>
+			</div>
+			<div class="form-group col-12 row">
+				<label for="BRname1" class="col-md-2 col-form-label">Business Reference 1</label>
+				<div class="col-md-4">
+					<input id="BRname1" name="BRname1" placeholder="Name" type="text" required="required" class="mb-2 form-control">
+					<input id="BRphone1" name="BRphone1" placeholder="Phone number" type="text" required="required" class="form-control">
+				</div>
+				<label for="BRname2" class="col-md-2 col-form-label">Business Reference 2</label>
+				<div class="col-md-4">
+					<input id="BRname2" name="BRname2" placeholder="Name" type="text" required="required" class="mb-2 form-control">
+					<input id="BRphone2" name="BRphone2" placeholder="Phone number" type="text" required="required" class="form-control">
+				</div>
+			</div>
+				
+			<!--Insurence info-->
+			<h5 class="mb-1 mt-4">Insurence Information</h5>
+			<div class="form-group col-12 row">
+				<label for="insurence_info" class="col-md-2 col-form-label">Insurence Information:</label>
+				<div class="col-md-10">
+					<textarea id="insurence_info" name="insurence_info"  rows="1" class="form-control"></textarea>
+				</div>
+			</div>
+			<div class="form-group col-12 row">
+				<label for="type_of_company" class="col-md-2 col-form-label">Type of Company:</label>
+				<div class="col-md-10">
+					<input id="type_of_company" name="type_of_company" placeholder="" type="text" required="required" class="form-control">
+				</div>
+			</div>
+			<div class="form-group col-12 row">
+				<label for="company_agent" class="col-md-2 col-form-label">Company Agent:</label>
+				<div class="col-md-10">
+					<input id="company_agent" name="company_agent" placeholder="" type="text" required="required" class="form-control">
+				</div>
+			</div>
+			<div class="form-group col-12 row">
+				<label for="city_state_agent" class="col-md-2 col-form-label">City/State (Agent):</label>
+				<div class="col-md-10">
+					<input id="city_state_agent" name="city_state_agent" placeholder="" type="text" required="required" class="form-control">
+				</div>
+			</div>
+			<div class="form-group col-12 row">
+				<label for="phone_nuber_agent" class="col-md-2 col-form-label">Phone Number (Agent):</label>
+				<div class="col-md-10">
+					<input id="phone_nuber_agent" name="phone_nuber_agent" placeholder="" type="text" required="required" class="form-control">
+				</div>
+			</div>
+			<div class="form-group col-12 row">
+				<label for="insurence_limit" class="col-md-2 col-form-label">Insurence Limit:</label>
+				<div class="col-md-10">
+					<input id="insurence_limit" name="insurence_limit" placeholder="" type="text" required="required" class="form-control">
+				</div>
+			</div>
+			<div class="form-group col-12 row">
+				<label for="insurence_deductible" class="col-md-2 col-form-label">Insurence diductible:</label>
+				<div class="col-md-10">
+					<input id="insurence_deductible" name="insurence_deductible" placeholder="" type="text" required="required" class="form-control">
+				</div>
+			</div>
+			<!--Equipment and route information-->
+			<h5 class="mb-1 mt-4">Equipment and Route Information</h5>
+			<div class="form-group col-12 row">
+				<label for="number_trucks" class="col-md-2 col-form-label">Number of Trucks:</label>
+				<div class="col-md-10">
+					<input id="number_trucks" name="number_trucks" placeholder="" type="text" required="required" class="form-control">
+				</div>
+			</div>
+			<div class="form-group col-12 row">
+				<label for="equipment_discription" class="col-md-2 col-form-label">Equipment Discription:</label>
+				<div class="col-md-10">
+					<textarea id="equipment_discription" name="equipment_discription"  rows="1" class="form-control"></textarea>
+				</div>
+			</div>
+			<div class="form-group col-12 row">
+				<label for="route_discription" class="col-md-2 col-form-label">Route Discription:</label>
+				<div class="col-md-10">
+					<textarea id="route_discription" name="route_discription"  rows="1" class="form-control"></textarea>
+				</div>
+			</div>
+			<!--Owner information-->
+			<h5 class="mb-1 mt-4">Owner Information</h5>
+			<div class="form-group col-md-12 row">
+				<label for="driver_license_number" class="pr-2 col-md-2 col-form-label">Drivers License Number:</label>
+				<div class="col-md-10">
+					<input id="driver_license_number" name="driver_license_number" placeholder="" type="text" required="required" class="form-control">
+				</div>
+				<div class="custom-file mt-3 container col-md-12">
+					<input type="file" class="col-md-12 " id="driver_license_img">
+					<label class="custom-file-label" for="driver_license_img">For Driver License Image</label>
+				</div>
+			</div>
+			<div class="form-group mt-3 float-right">
+				<button name="submit" type="submit" class="btn btn-lg btn-primary">Submit</button>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- Date picker script-->
+</body>
+</html>

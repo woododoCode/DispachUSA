@@ -2,3 +2,8 @@
 .owl-carousel img{
 	max-height: 100px;
 }
+@media (min-width: 320px) and (max-width: 576px){
+	.owl-carousel .item{
+		width: 50%;
+	}
+}

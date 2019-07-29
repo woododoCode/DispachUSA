@@ -1,0 +1,27 @@
+/* CSS Document */
+.registration_header{
+	font-size: 3em;
+	font-weight: 500;
+	color: #2262c0;
+	padding-bottom: 40px;
+	font-family: Kefa;
+}
+label.required_field::after { 
+    content: "*";
+    color: red;
+}
+p.required_field::before{
+	content: "*";
+    color: red;
+	margin-bottom: 10px;
+}
+.btn{
+	background-color: #2262c0;
+}
+.custom-file-label{
+	overflow: hidden;
+}
+a.none{
+	text-decoration: none;
+	color: white;
+}
