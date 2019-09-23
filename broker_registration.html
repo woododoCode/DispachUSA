@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 <!--User css-->
+<link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/registration.css">
 <!--Fonts-->
 <link rel="stylesheet" href="fonts/Kefa-Regular.TTF">
@@ -20,6 +21,36 @@
 </head>
 
 <body>
+<nav class="navbar header"> <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a> </nav>
+<nav class="navbar navi navbar-expand-xl">
+	<div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i></button>
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav">
+				<li class="nav-item active"> <a class="nav-link" href="#">Home</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#">Shippers</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#">Carriers</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#">Broker</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#">How it works</a> </li>
+				<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> About Us </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a> </div>
+				</li>
+				<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Support </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
+				</li>
+				<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> English </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown3"> <a class="dropdown-item" href="#">Espanol</a> </div>
+				</li>
+			</ul>
+			<ul class="register navbar-right">
+				<li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#registration">Register</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#">Sign in</a> </li>
+			</ul>
+		</div>
+	</div>
+</nav>
 <div class="col-md-12 registration_header text-center">Register Form for Brocker</div>
 <div class="container-fluid row">
 	<div class="col-lg-9">
@@ -28,19 +59,6 @@
 		</label>
 		<p class="float-right required_field"><small>Required Fields</small></p>
 		<form>
-			<div class="form-group">
-				<label class="required_field">What best discribes you?</label>
-				<div>
-					<div class="custom-control custom-radio custom-control-inline">
-						<input name="radio" id="business" type="radio" class="custom-control-input" value="business" required="required">
-						<label for="business" class="custom-control-label">Business<i class="fa fa-question-circle"></i></label>
-					</div>
-					<div class="custom-control custom-radio custom-control-inline">
-						<input name="radio" id="individual" type="radio" class="custom-control-input" value="individual" required="required">
-						<label for="individual" class="custom-control-label">Individual</label>
-					</div>
-				</div>
-			</div>
 			<!--Name-->
 			<div class="row">
 				<div class="col-md-6 form-group for">
@@ -71,14 +89,13 @@
 			<!--company-->
 			<div class="form-group">
 				<label class="required_field" for="company_name">Company Name</label>
-					<div class="input-group">
-						<input id="company_name" name="company_name" placeholder="Company Name" type="text" class="form-control" required="required">
-						<div class="input-group-append">
-							<div class="input-group-text"> <i class="fa fa-question-circle"></i> </div>
-						</div>
-					</div> 
-					<span id="company_nameHelpBlock" class="form-text text-muted">If you are reigistering as a business, enter your company name here. Company name must match your applicable business license</span>
-			</div>
+				<div class="input-group">
+					<input id="company_name" name="company_name" placeholder="Company Name" type="text" class="form-control" required="required">
+					<div class="input-group-append">
+						<div class="input-group-text"> <i class="fa fa-question-circle"></i> </div>
+					</div>
+				</div>
+				<span id="company_nameHelpBlock" class="form-text text-muted">If you are reigistering as a business, enter your company name here. Company name must match your applicable business license</span> </div>
 			<!--	Adress-->
 			<div class="row">
 				<div class="col-md-6 form-group">
@@ -136,7 +153,9 @@
 				</label>
 			</div>
 			<div class="form-group mt-3 float-right">
-				<button name="submit" type="submit" class="btn btn-primary"><a class="none" href="broker_registration2.html">Next</a>&nbsp;<i class="fas fa-arrow-right"></i></button>
+				<button name="submit" type="submit" class="btn btn-primary">
+				<a class="none" href="broker_registration2.html">Next</a>&nbsp;<i class="fas fa-arrow-right"></i>
+				</button>
 			</div>
 		</form>
 	</div>

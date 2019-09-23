@@ -8,10 +8,9 @@ nav li{
 	list-style: none;
 	padding-top: 8px;
 	float: right;
-	
 }
 .register a{
-	background: #ebb701;
+	background: #0d3c80;
 	border: 1px solid white;
 	border-radius: 3px;
 	color: white;
@@ -20,8 +19,8 @@ nav li{
 }
 .register a:hover{
 	background: white;
-	color: #ebb701;
-	border: 1px/ solid #656565;
+	color: #0d3c80!important;
+	border: 1px solid #0d3c80;
 }
 
 .navi{
@@ -93,16 +92,17 @@ li a:hover{
 	justify-content: space-around;
 	font-weight: 800;
 	border-radius: 3px;
-	background-color: #ebb701;
+	background-color: #0d3c80;
 	border: 1px white solid;
-	color: #003082;
+	color: white;
 	font-size: 13px;
 	padding: 10px 25px;
 	transition: 0.3s;
 }
 .capture_btn button:hover{
 	background-color: white;	
-	border: 1px solid #ebb701;
+	border: 1px solid #0d3c80;
+	color: #0d3c80;
 }
 /*Shipping easy*/
 
@@ -118,10 +118,11 @@ li a:hover{
 	padding-bottom: 10px;
 }*/
 .ship_easy p{
-	
+	position: absolute;
+	bottom: 0;
 }
 .ship_easy i{
-	margin: 30px 0;
+	margin-top: 10%;
 	font-size: 3.5em;
 }
 .ship_easy{
@@ -131,9 +132,11 @@ li a:hover{
 	transition: 0.3s;
 }
 .ship_easy .card-body{
+	height: 250px;
 	background: #f0eee2;
 	border-radius: 5px;
 	transition: 0.3s;
+	padding: 10px;
 }
 .ship_easy .card-body:hover{
 	background: linear-gradient(to bottom, #ebb701, #ec9601);
@@ -325,27 +328,17 @@ footer a{
 	margin-right: 10px;
 	font-size: 14px;
 }
-.type_registr{
-	height: 130px;
+
+.modal-header{
+	text-align: center;
 }
-.type_registr:hover{
-	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-	border: 1px solid white;
-	border-radius: 5px;
+.modal-title{
+	color: #2263c1;
+	font-family:Baskerville, "serif";
+	font-size: 2em;
 	
 }
-.type_registr p{
-	color: #2262c0;
-	margin-bottom: 0;
-}
-.type_registr i{
-	font-size: 6em;
-	color: #2262c0;
-	margin-top: 5px;
-}
 @font-face {
-    font-family: Kefa; /* Имя шрифта */
-    src: url("../fonts/Kefa-Regular.TTF"); /* Путь к файлу со шрифтом */
+    font-family: Kefa; /* РРјСЏ С€СЂРёС„С‚Р° */
+    src: url("../fonts/Kefa-Regular.TTF"); /* РџСѓС‚СЊ Рє С„Р°Р№Р»Сѓ СЃРѕ С€СЂРёС„С‚РѕРј */
    }

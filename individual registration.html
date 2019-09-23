@@ -1,157 +1,176 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>DispatchUSA</title>
-	<!--	Bootstrap css-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<!--Font awesome-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-	<!--owl carousel-->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.css">
-	<!--Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-	<!--User css-->
-	<link rel="stylesheet" href="css/registration.css">
-	<!--Fonts-->
-	<link rel="stylesheet" href="fonts/Kefa-Regular.TTF">
-	<!-- Datepicker-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DispatchUSA</title>
+<!--	Bootstrap css-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!--Font awesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<!--owl carousel-->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.css">
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<!--User css-->
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/registration.css">
+<!--Fonts-->
+<link rel="stylesheet" href="fonts/Kefa-Regular.TTF">
+<!-- Datepicker-->
 
 </head>
 
 <body>
-	<div class="col-xl-12 registration_header text-center">Register Form for Individual</div>
-	<div class="container-fluid row">
-		<div class="col-lg-9">
-				<label class="mb-4"><h5>Tell us about you</h5></label>
-				<p class="float-right required_field"><small>Required Fields</small></p>
-			<form>
-				<div class="form-group">
-					<label class="required_field">What best discribes you?</label> 
-					<div>
-						<div class="custom-control custom-radio custom-control-inline">
-							<input name="radio" id="business" type="radio" class="custom-control-input" value="business" required="required"> 
-							<label for="business" class="custom-control-label">Business<i class="fa fa-question-circle"></i></label>
-						</div>
-						<div class="custom-control custom-radio custom-control-inline">
-							<input name="radio" id="individual" type="radio" class="custom-control-input" value="individual" checked required="required"> 
-							<label for="individual" class="custom-control-label">Individual</label>
-						</div>
+<nav class="navbar header"> <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a> </nav>
+<nav class="navbar navi navbar-expand-xl">
+	<div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i></button>
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav">
+				<li class="nav-item active"> <a class="nav-link" href="#">Home</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#">Shippers</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#">Carriers</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#">Broker</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#">How it works</a> </li>
+				<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> About Us </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a> </div>
+				</li>
+				<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Support </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
+				</li>
+				<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> English </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown3"> <a class="dropdown-item" href="#">Espanol</a> </div>
+				</li>
+			</ul>
+			<ul class="register navbar-right">
+				<li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#registration">Register</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#">Sign in</a> </li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="col-xl-12 registration_header text-center">Register Form for Individual</div>
+<div class="container-fluid row">
+	<div class="col-lg-9">
+		<label class="mb-4">
+		<h5>Tell us about you</h5>
+		</label>
+		<p class="float-right required_field"><small>Required Fields</small></p>
+		<form>
+			
+			<!--Name-->
+			<div class="row">
+				<div class="col-md-6 form-group for">
+					<label class="required_field" for="first_name">First Name</label>
+					<input id="first_name" name="first_name" placeholder="First Name" type="text" aria-describedby="first_nameHelpBlock" required="required" class="form-control">
+					<span id="first_nameHelpBlock" class="form-text text-muted">Please enter your first and last name exactly as it should appear in your driver's license</span> </div>
+				<div class="col-md-6 form-group">
+					<label class="required_field" for="last_name">Last Name</label>
+					<input id="last_name" name="last_name" placeholder="Last Name" type="text" aria-describedby="last_nameHelpBlock" required="required" class="form-control">
+				</div>
+			</div>
+			<!--Date of birth-->
+			<div class="form-group">
+				<label for="date_of_birth">Date of Birth(MM/DD/YYYY)</label>
+				<div class="input-group">
+					<input id="date_of_birth" name="date_of_birth" placeholder="MM/DD/YYYY" type="text" class="form-control" required="required">
+					<div class="input-group-append">
+						<div class="input-group-text"> <i class="fa fa-calendar"></i> </div>
 					</div>
 				</div>
-				<!--Name-->
-				<div class="row">
-					<div class="col-md-6 form-group for">
-						<label class="required_field" for="first_name">First Name</label> 
-						<input id="first_name" name="first_name" placeholder="First Name" type="text" aria-describedby="first_nameHelpBlock" required="required" class="form-control"> 
-						<span id="first_nameHelpBlock" class="form-text text-muted">Please enter your first and last name exactly as it should appear in your driver's license</span>
-					</div>
-					<div class="col-md-6 form-group">
-						<label class="required_field" for="last_name">Last Name</label> 
-						<input id="last_name" name="last_name" placeholder="Last Name" type="text" aria-describedby="last_nameHelpBlock" required="required" class="form-control"> 
-					</div>
-				</div>
-				<!--Date of birth-->
-				<div class="form-group">
-					<label for="date_of_birth">Date of Birth(MM/DD/YYYY)</label> 
+			</div>
+			<!--Email-->
+			<div class="row">
+				<div class="col-md-6 form-group">
+					<label class=" required_field" for="email">Email</label>
 					<div class="input-group">
-						<input id="date_of_birth" name="date_of_birth" placeholder="MM/DD/YYYY" type="text" class="form-control" required="required"> 
+						<input id="email" name="email" placeholder="Email" type="text" class="form-control" required="required">
 						<div class="input-group-append">
-							<div class="input-group-text">
-								<i class="fa fa-calendar"></i>
-							</div>
+							<div class="input-group-text"> <i class="fa fa-question-circle"></i> </div>
 						</div>
 					</div>
 				</div>
-				<!--Email-->		
-				<div class="row">
-					<div class="col-md-6 form-group">
-						<label class=" required_field" for="email">Email</label> 
-						<div class="input-group">
-							<input id="email" name="email" placeholder="Email" type="text" class="form-control" required="required"> 
-							<div class="input-group-append">
-								<div class="input-group-text">
-									<i class="fa fa-question-circle"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 form-group">
-						<label class="required_field" for="confirm_email">Confirm Email</label> 
-						<input id="confirm_email" name="confirm_email" placeholder="Confirm Email" type="text" class="form-control" required="required">
-					</div>
+				<div class="col-md-6 form-group">
+					<label class="required_field" for="confirm_email">Confirm Email</label>
+					<input id="confirm_email" name="confirm_email" placeholder="Confirm Email" type="text" class="form-control" required="required">
 				</div>
-				<!--	Adress-->
-				<div class="row">
-					<div class="col-md-6 form-group">
-						<label class="required_field" for="adress_line_1">Adress Line 1</label> 
-						<input id="adress_line_1" name="adress_line_1" placeholder="Adress Line 1" type="text" required="required" class="form-control">
-					</div>
-					<div class="col-md-6 form-group">
-					<label for="adress_line_2">Adress Line 2</label> 
+			</div>
+			<!--	Adress-->
+			<div class="row">
+				<div class="col-md-6 form-group">
+					<label class="required_field" for="adress_line_1">Adress Line 1</label>
+					<input id="adress_line_1" name="adress_line_1" placeholder="Adress Line 1" type="text" required="required" class="form-control">
+				</div>
+				<div class="col-md-6 form-group">
+					<label for="adress_line_2">Adress Line 2</label>
 					<input id="adress_line_2" name="adress_line_2" placeholder="Adress Line 2" type="text" class="form-control">
 				</div>
+			</div>
+			<!--Country and State-->
+			<div class="row">
+				<div class="col-md-6 form-group">
+					<label class="required_field" for="country">Country</label>
+					<input id="country" name="country" placeholder="Country" type="text" class="form-control" required="required">
 				</div>
-				<!--Country and State-->
-				<div class="row">		
-					<div class="col-md-6 form-group">
-						<label class="required_field" for="country">Country</label> 
-						<input id="country" name="country" placeholder="Country" type="text" class="form-control" required="required">
-					</div>
-					<div class="col-md-6 form-group">
-						<label class="required_field" for="state">Satate/Province</label> 
-						<div>
-							<select id="state" name="state" class="custom-select" aria-describedby="stateHelpBlock" required="required">
-								<option value="rabbit"></option>
-								<option value="duck">Duck</option>
-								<option value="fish">Fish</option>
-							</select> 
-						</div>
-					</div>
-				</div>	
-				<!--City and Zip-->
-				<div class="row">
-					<div class="col-md-6 form-group">
-						<label class="required_field" for="city">City</label> 
-						<input id="city" name="city" placeholder="City" type="text" class="form-control" required="required">
-					</div>
-					<div class="col-md-6 form-group">
-						<label class="required_field" for="zip">ZIP/Postal Code</label> 
-						<input id="zip" name="zip" placeholder="ZIP/Postal Code" type="text" class="form-control" required="required">
+				<div class="col-md-6 form-group">
+					<label class="required_field" for="state">Satate/Province</label>
+					<div>
+						<select id="state" name="state" class="custom-select" aria-describedby="stateHelpBlock" required="required">
+							<option value="rabbit"></option>
+							<option value="duck">Duck</option>
+							<option value="fish">Fish</option>
+						</select>
 					</div>
 				</div>
-				<!--Phone numbers-->
-				<div class="row">
-					<div class="col-md-6 form-group">
-						<label class="required_field" for="phone">Phone Number</label> 
-						<input id="phone" name="phone" placeholder="Phone Number" type="text" class="form-control" required="required">
-					</div>
-					<div class="col-md-6 form-group">
-						<label for="phone_extention">Phone Extention</label> 
-						<input id="phone_extention" name="phone_extention" placeholder="Phone Extention" type="text" class="form-control">
-					</div> 
+			</div>
+			<!--City and Zip-->
+			<div class="row">
+				<div class="col-md-6 form-group">
+					<label class="required_field" for="city">City</label>
+					<input id="city" name="city" placeholder="City" type="text" class="form-control" required="required">
 				</div>
-				<div class="form-group form-check">
-					<input type="checkbox" class="form-check-input" id="exampleCheck1">
-					<label class="form-check-label" for="exampleCheck1"><p class="required_field">By clicking this box, I agree that I am at least 18 years of age and that I have read and agreed to the <a href="#">DispacthUSA Member Terms and Conditions</a>, <a href="#">Website Terms of Service</a> and <a href="">Privacy Policy</a></p></label>
+				<div class="col-md-6 form-group">
+					<label class="required_field" for="zip">ZIP/Postal Code</label>
+					<input id="zip" name="zip" placeholder="ZIP/Postal Code" type="text" class="form-control" required="required">
 				</div>
-					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="customFile">
-						<label class="custom-file-label" for="customFile">Click Here to Upload Picture of Driver License</label>
-					</div>
-				<div class="form-group mt-3 float-right">
-					<button name="submit" type="submit" class="btn btn-lg btn-primary">Submit</button>
+			</div>
+			<!--Phone numbers-->
+			<div class="row">
+				<div class="col-md-6 form-group">
+					<label class="required_field" for="phone">Phone Number</label>
+					<input id="phone" name="phone" placeholder="Phone Number" type="text" class="form-control" required="required">
 				</div>
-			</form>
-		</div>
-		<div class="col-lg-3">
-			<h1> Welcome Future Member of DispatchUSA</h1>
-			<p>After filling out this form and clicking submit, you will receive a code on the phone number you have provided, you will the be asked to enter this code in order to finalize the application to making an account</p>
-			<p>All of you individual information is confidential and protected</p></div>
-		</div>
-	<!-- Date picker script-->
+				<div class="col-md-6 form-group">
+					<label for="phone_extention">Phone Extention</label>
+					<input id="phone_extention" name="phone_extention" placeholder="Phone Extention" type="text" class="form-control">
+				</div>
+			</div>
+			<div class="form-group form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">
+				<p class="required_field">By clicking this box, I agree that I am at least 18 years of age and that I have read and agreed to the <a href="#">DispacthUSA Member Terms and Conditions</a>, <a href="#">Website Terms of Service</a> and <a href="">Privacy Policy</a></p>
+				</label>
+			</div>
+			<div class="custom-file">
+				<input type="file" class="custom-file-input" id="customFile">
+				<label class="custom-file-label" for="customFile">Click Here to Upload Picture of Driver License</label>
+			</div>
+			<div class="form-group mt-3 float-right">
+				<button name="submit" type="submit" class="btn btn-lg btn-primary">Submit</button>
+			</div>
+		</form>
+	</div>
+	<div class="col-lg-3">
+		<h1> Welcome Future Member of DispatchUSA</h1>
+		<p>After filling out this form and clicking submit, you will receive a code on the phone number you have provided, you will the be asked to enter this code in order to finalize the application to making an account</p>
+		<p>All of you individual information is confidential and protected</p>
+	</div>
+</div>
+<!-- Date picker script-->
 </body>
 </html>
