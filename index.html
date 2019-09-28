@@ -51,7 +51,7 @@
 			</ul>
 			<ul class="register navbar-right">
 				<li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#registration">Register</a> </li>
-				<li class="nav-item"> <a class="nav-link" href="#">Sign in</a> </li>
+				<li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#sign_in">Sign in</a> </li>
 			</ul>
 		</div>
 	</div>
@@ -75,16 +75,14 @@
 		<button class="col-sm-2">About this</button>
 	</div>
 </div>
-	
-	
+
 <!-- shipping made easy -->
 <div class="container">
 	<div class="col-xl-12 section_header text-center">Shipping Made Easy</div>
 	<div class="row">
 		<div class="col-lg-3 ship_easy">
 			<div class="card">
-				<div class="card-body text-center">
-					<a href="html/shipingmadeeasy/dealer.html" class="stretched-link"></a>
+				<div class="card-body text-center"> <a href="html/shipingmadeeasy/dealer.html" class="stretched-link"></a>
 					<h3>Dealers and Shippers</h3>
 					<i class="fas fa-car"></i>
 					<p>Information and rules about Dealers and Sgippers individuals and register option</p>
@@ -93,8 +91,7 @@
 		</div>
 		<div class="col-lg-3 ship_easy">
 			<div class="card">
-				<div class="card-body text-center">
-					<a href="html/shipingmadeeasy/Brokers.html" class="stretched-link"></a>
+				<div class="card-body text-center"> <a href="html/shipingmadeeasy/Brokers.html" class="stretched-link"></a>
 					<h3>Brokers</h3>
 					<i class="fas fa-user-tie"></i>
 					<p>Information and rules for Brokers and register option</p>
@@ -103,8 +100,7 @@
 		</div>
 		<div class="col-lg-3 ship_easy">
 			<div class="card">
-				<div class="card-body text-center">
-					<a href="html/shipingmadeeasy/carriers.html" class="stretched-link"></a>
+				<div class="card-body text-center"> <a href="html/shipingmadeeasy/carriers.html" class="stretched-link"></a>
 					<h3>Carriers</h3>
 					<i class="fas fa-truck-moving"></i>
 					<p>Information and rules for Carriers and register option</p>
@@ -113,8 +109,7 @@
 		</div>
 		<div class="col-lg-3 ship_easy">
 			<div class="card">
-				<div class="card-body text-center">
-					<a href="html/shipingmadeeasy/individual.html" class="stretched-link"></a>
+				<div class="card-body text-center"> <a href="html/shipingmadeeasy/individual.html" class="stretched-link"></a>
 					<h3>Individual</h3>
 					<i class="fas fa-user"></i>
 					<p>Information and rules for Individuals and register option</p>
@@ -252,7 +247,6 @@
 		</div>
 	</div>
 </div>
-	
 <div class="container-fluid">
 	<div class="col-xl-12 categories_header text-center">Some of Our Categories</div>
 	<div class="row">
@@ -362,65 +356,87 @@
 
 <!-- Modal -->
 <div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="col-12 modal-title" id="regmod_title">Please Select type of Registration</h5>
-      </div>
-      <div class="modal-body">
-       <div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Business
-        </button>
-      </h2>
-    </div>
-
-    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body d-flex justify-content-between">
-				<a href="#">Dealer</a>
-				<a href="#">Carrier</a>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <a href="#">Broker</a>
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body text-center">
-        <a href="#">Broker</a>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Individual
-        </button>
-      </h2>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body d-flex justify-content-between">
-        <a href="#">Lend Car</a>
-        <a href="#">Rent Car</a>
-        <a href="#">Carrier</a>
-        <a href="#">Send Cargo</a>
-        <a href="#">Taxi</a>
-      </div>
-    </div>
-  </div>
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="col-12 modal-title" id="regmod_title">Please Select type of Registration</h5>
+			</div>
+			<div class="modal-body">
+				<div class="accordion" id="accordionExample">
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Business </button>
+							</h2>
+						</div>
+						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+							<div class="card-body d-flex justify-content-between"> <a href="#">Dealer</a> <a href="#">Carrier</a> </div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								<a href="#">Broker</a>
+								</button>
+							</h2>
+						</div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+							<div class="card-body text-center"> <a href="#">Broker</a> </div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Individual </button>
+							</h2>
+						</div>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							<div class="card-body d-flex justify-content-between"> <a href="#">Lend Car</a> <a href="#">Rent Car</a> <a href="#">Carrier</a> <a href="#">Send Cargo</a> <a href="#">Taxi</a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-      </div>
-    </div>
-  </div>
+<!--login modal-->
+<div id="sign_in" class="modal fade" role="dialog">
+	<div class="modal-dialog"> 
+		
+		<!-- Modal content-->
+		<div class="">
+			<div class="card">
+				<article class="card-body">
+					<h4 class="card-title text-center mb-4 mt-1">Sign in</h4>
+					<hr>
+					<form>
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-prepend"> <span class="input-group-text"> <i class="fa fa-user"></i> </span> </div>
+								<input name="" class="form-control" placeholder="Email or login" type="email">
+							</div>
+							<!-- input-group.// --> 
+						</div>
+						<!-- form-group// -->
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-prepend"> <span class="input-group-text"> <i class="fa fa-lock"></i> </span> </div>
+								<input class="form-control" placeholder="******" type="password">
+							</div>
+							<!-- input-group.// --> 
+						</div>
+						<!-- form-group// -->
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary btn-block"> Login </button>
+						</div>
+						<!-- form-group// -->
+						<p class="text-center"><a href="#" >Forgot password?</a></p>
+					</form>
+				</article>
+			</div>
+		</div>
+	</div>
 </div>
 <!-- jQuery library --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
