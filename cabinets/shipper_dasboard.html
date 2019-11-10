@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DispatchUSA</title>
+<!--	Bootstrap css-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!--Font awesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<!--owl carousel-->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.css">
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<!--User css-->
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/registration.css">
+<!--Fonts-->
+<link rel="stylesheet" href="../fonts/Kefa-Regular.TTF">
+</head>
+
+<body>
+<nav class="navbar header">
+	<a class="navbar-brand" href="#"><img src="../img/logo.png" alt=""></a>
+</nav>
+<nav class="navbar navi navbar-expand-xl">
+	<div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+		<i class="fas fa-bars"></i></button>
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Dashboard</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> My Account </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+						<a class="dropdown-item" href="#">Transportation archive</a>
+						<a class="dropdown-item" href="#">My Ratings</a>
+						<a class="dropdown-item" href="#">Account Details</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Post Now </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+						<a class="dropdown-item" href="#">Car</a>
+						<a class="dropdown-item" href="#">Boat</a>
+						<a class="dropdown-item" href="#">Trailer</a>
+						<a class="dropdown-item" href="#">Cargo</a>
+						<a class="dropdown-item" href="#">Others</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Messages </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+						<a class="dropdown-item" href="#">Sent</a>
+						<a class="dropdown-item" href="#">Received</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Offers </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+						<a class="dropdown-item" href="#">Active Offers</a>
+						<a class="dropdown-item" href="#">Declined Offers</a>
+						<a class="dropdown-item" href="#">Expired Offers</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Active Listing</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Shipments </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown5">
+						<a class="dropdown-item" href="#">In Transit</a>
+						<a class="dropdown-item" href="#">Delivered</a>
+						<a class="dropdown-item" href="#">Cancelled</a>
+						<a class="dropdown-item" href="#">Problematic</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Support </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown6">
+						<a class="dropdown-item" href="#">FAQ</a>
+						<a class="dropdown-item" href="#">Website information</a>
+						<a class="dropdown-item" href="#">How It Works</a>
+						<a class="dropdown-item" href="#">Live Chat</a>
+						<a class="dropdown-item" href="#">Customer Service</a>
+						<a class="dropdown-item" href="#">Make a complaint</a>
+						<a class="dropdown-item" href="#">Report a user</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown7" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> English </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown7">
+						<a class="dropdown-item" href="#">Espanol</a>
+						<a class="dropdown-item" href="#">Русский</a>
+						<a class="dropdown-item" href="#">Українська</a>
+					</div>
+				</li>
+			</ul>
+			<p class="text-center">Welcome dear NoName</p>
+			<ul class="register nav navbar-nav navbar-right">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Sign out</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!--My offers-->
+<div class="container text-capitalize">
+	<h3 class="mx-4 my-4">My Offers</h3>
+	<div class="row text-primary font-weight-bold mb-3">
+		<div class="col-4">Stock #</div>
+		<div class="col-4 text-center">Offer</div>
+		<div class="col-4 text-center">Status</div>
+	</div>
+	<div class="row mb-2 row_hover">
+		<div class="col-4">2014 Dodge Ram 1500 SLT</div>
+		<div class="col-4 text-center">$2800 USD</div>
+		<div class="col-4 text-center text-secondary">Waiting</div>
+	</div>
+	<div class="row mb-2 row_hover">
+		<div class="col-4">2020 Mercedes C63 AMG</div>
+		<div class="col-4 text-center">$7100 USD</div>
+		<div class="col-4 text-center text-success">Accepted</div>
+	</div>
+	<div class="row mb-2 row_hover">
+		<div class="col-4">2014 Contender boat</div>
+		<div class="col-4 text-center">$3200 USD</div>
+		<div class="col-4 text-center text-danger">Declined</div>
+	</div>
+	<hr class="mt-5">
+</div>
+<!-- my watchlist-->
+<div class="container text-capitalize">
+	<h3 class="mx-4 my-4 ">My inventory</h3>
+	<div class="row_hover">
+		<div class="row text-primary font-weight-bold mb-3">
+			<div class="col-3">stock #</div>
+			<div class="col-3 text-center">description</div>
+			<div class="col-3 text-center">Price</div>
+			<div class="col-3 text-center">Status</div>
+		</div>
+	</div>
+	<div class="row_hover">
+		<div class="row mb-2">
+			<div class="col-3">#1354651</div>
+			<div class="col-3 text-center">2019 Honda Accord</div>
+			<div class="col-3 text-center">$2100</div>
+			<div class="col-3 text-center text-success">Available</div>
+		</div>
+	</div>
+	<div class="row_hover">
+		<div class="row mb-2">
+			<div class="col-3">#654873</div>
+			<div class="col-3 text-center">2016 Seadoo 155</div>
+			<div class="col-3 text-center">$700</div>
+			<div class="col-3 text-center text-success">Available</div>
+		</div>
+	</div>
+	<div class="row_hover">
+		<div class="row mb-2">
+			<div class="col-3">#6548795</div>
+			<div class="col-3 text-center">2012 Mako Boat</div>
+			<div class="col-3 text-center">$1500</div>
+			<div class="col-3 text-center text-success">Available</div>
+		</div>
+	</div>
+	<div class="row_hover">
+		<div class="row mb-2">
+			<div class="col-3">#65487</div>
+			<div class="col-3 text-center">2015 Nissan Sentra</div>
+			<div class="col-3 text-center">$1200</div>
+			<div class="col-3 text-center text-danger">Not Available</div>
+		</div>
+	</div>
+	<div class="row_hover">
+		<div class="row mb-2">
+			<div class="col-3">#123687</div>
+			<div class="col-3 text-center">2018 Cargo Trailer</div>
+			<div class="col-3 text-center">$1800</div>
+			<div class="col-3 text-center text-danger">Not Available</div>
+		</div>
+	</div>
+	<div class="row_hover">
+		<div class="row mb-2">
+			<div class="col-3">#687496</div>
+			<div class="col-3 text-center">2008 Semi Truck</div>
+			<div class="col-3 text-center">$950</div>
+			<div class="col-3 text-center text-danger">Not Available</div>
+		</div>
+	</div>
+	<hr class="mt-5">
+</div>
+<!-- Shippments in transit -->
+<div class="container text-capitalize">
+	<h3 class="mx-4 my-4">Shippments in transit</h3>
+	<div class="row text-primary font-weight-bold mb-3">
+		<div class="col-3">Stock #</div>
+		<div class="col-3 text-center">Desription</div>
+		<div class="col-2 text-center">Pickup Date</div>
+		<div class="col-2 text-center">Delivery Date</div>
+		<div class="col-2 text-center">Price</div>
+	</div>
+	<div class="row mb-2 row_hover">
+		<div class="col-3">6598745</div>
+		<div class="col-3 text-center">2012 Honda Accord</div>
+		<div class="col-2 text-center">2/11/19</div>
+		<div class="col-2 text-center">2/14/19</div>
+		<div class="col-2 text-center">$800 USD</div>
+	</div>
+	<div class="row mb-2 row_hover">
+		<div class="col-3">6584123</div>
+		<div class="col-3 text-center">2018 Contender Boat</div>
+		<div class="col-2 text-center">2/12/19</div>
+		<div class="col-2 text-center">2/17/19</div>
+		<div class="col-2 text-center">$2100 USD</div>
+	</div>
+	<hr class="mt-5">
+</div>
+<!-- footer-->
+<footer>
+	<div class="container">
+		<div class="row justify-content-between">
+			<div>
+				<a href="index.html">©DispatchUSA.com</a>
+				<a href="#">All rights reserved</a>
+			</div>
+			<div>
+				<a href="#">Privacy Policy</a>
+				<a href="#">Terms of Use</a>
+			</div>
+			<div>
+				<a href="#">Developed: start point studio</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- owl JS-->
+<script src="../js/owl.carousel.min.js"></script>
+<!-- Latest compiled bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

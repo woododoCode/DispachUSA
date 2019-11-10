@@ -66,7 +66,7 @@
 				</div>
 				<div class="col-xl-10">
 					<div class="custom-file col-xl-12">
-						<input type="file" class="" id="dealer_license_img">
+						<input type="file" class="custom-file-input" id="dealer_license_img">
 						<label class="custom-file-label" for="dealer_license_img">Click Here to Upload Picture of Dealer License</label>
 					</div>
 				</div>
@@ -77,7 +77,7 @@
 				</div>
 				<div class="col-xl-10">
 					<div class="custom-file col-xl-12">
-						<input type="file" class="" id="tax_certificate_img">
+						<input type="file" class="custom-file-input" id="tax_certificate_img">
 						<label class="custom-file-label" for="tax_certificate_img">Click Here to Upload Picture of Tax Certificate</label>
 					</div>
 				</div>
@@ -214,5 +214,16 @@
 	</div>
 </div>
 <!-- Date picker script-->
+<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+-->	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script>
+// Add the following code if you want the name of the file appear on select
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+</script>
+	
+
 </body>
 </html>
