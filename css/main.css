@@ -222,14 +222,15 @@ li a:hover{
 	width: 804px;
 	height: 453px;
 }
-
+.control::before{
+  top: 30%!important;
+  left: 80%!important;
+}
 
 .row_hover:hover{
 	background-color: #DADADA;
 	border-radius: 5px;
 }
-
-
 @media (min-width: 992.1px) and (max-width: 1199px){
 	.nav_capture{
 	bottom: 267px;

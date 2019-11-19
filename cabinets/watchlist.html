@@ -6,24 +6,22 @@
 <title>DispatchUSA</title>
 <!--	Bootstrap css-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<!--Font awesome-->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-<!--owl carousel-->
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.css">
+<!--Bootstrap Datepicker-->
+<link rel="stylesheet" href="../css/bootstrap-datepicker3.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <!--Fonts-->
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <!--datatabl css-->
+  <!-- datatable css-->
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.css"/>
 <!--User css-->
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/registration.css">
+
 <!--Fonts-->
 <link rel="stylesheet" href="../fonts/Kefa-Regular.TTF">
 </head>
-
- 
 
 <body>
 <nav class="navbar header">
@@ -35,7 +33,7 @@
 		<i class="fas fa-bars"></i></button>
 		<div class="collapse navbar-collapse" id="navbar">
 			<ul class="nav navbar-nav">
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link" href="#">Dashboard</a>
 				</li>
 				<li class="nav-item dropdown">
@@ -64,7 +62,7 @@
 						<a class="dropdown-item" href="#">Expired Offers</a>
 					</div>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item active">
 					<a class="nav-link" href="#">Watchlist</a>
 				</li>
 				<li class="nav-item dropdown">
@@ -106,117 +104,91 @@
 		</div>
 	</div>
 </nav>
-<!--My offers-->
-<div class="container text-capitalize">
-	<h3 class="mx-4 my-4">My Offers</h3>
-	<div class="row text-primary font-weight-bold mb-3">
-		<div class="col-4">Stock #</div>
-		<div class="col-4 text-center">Offer</div>
-		<div class="col-4 text-center">Status</div>
-	</div>
-	<div class="row mb-2 row_hover">
-		<div class="col-4">2014 Dodge Ram 1500 SLT</div>
-		<div class="col-4 text-center">$2800 USD</div>
-		<div class="col-4 text-center text-secondary">Waiting</div>
-	</div>
-	<div class="row mb-2 row_hover">
-		<div class="col-4">2020 Mercedes C63 AMG</div>
-		<div class="col-4 text-center">$7100 USD</div>
-		<div class="col-4 text-center text-success">Accepted</div>
-	</div>
-	<div class="row mb-2 row_hover">
-		<div class="col-4">2014 Contender boat</div>
-		<div class="col-4 text-center">$3200 USD</div>
-		<div class="col-4 text-center text-danger">Declined</div>
-	</div>
-	<hr class="mt-5">
-</div>
-<!-- my watchlist-->
-<div class="container text-capitalize">
-	<h3 class="mx-4 my-4 ">My watchlist</h3>
-	<div class="row_hover">
-		<div class="row text-primary font-weight-bold mb-3">
-			<div class="col-3">stock #</div>
-			<div class="col-3 text-center">description</div>
-			<div class="col-3 text-center">Price</div>
-			<div class="col-3 text-center">Status</div>
-		</div>
-	</div>
-	<div class="row_hover">
-		<div class="row mb-2">
-			<div class="col-3">#1354651</div>
-			<div class="col-3 text-center">2019 Honda Accord</div>
-			<div class="col-3 text-center">$2100</div>
-			<div class="col-3 text-center text-success">Available</div>
-		</div>
-	</div>
-	<div class="row_hover">
-		<div class="row mb-2">
-			<div class="col-3">#654873</div>
-			<div class="col-3 text-center">2016 Seadoo 155</div>
-			<div class="col-3 text-center">$700</div>
-			<div class="col-3 text-center text-success">Available</div>
-		</div>
-	</div>
-	<div class="row_hover">
-		<div class="row mb-2">
-			<div class="col-3">#6548795</div>
-			<div class="col-3 text-center">2012 Mako Boat</div>
-			<div class="col-3 text-center">$1500</div>
-			<div class="col-3 text-center text-success">Available</div>
-		</div>
-	</div>
-	<div class="row_hover">
-		<div class="row mb-2">
-			<div class="col-3">#65487</div>
-			<div class="col-3 text-center">2015 Nissan Sentra</div>
-			<div class="col-3 text-center">$1200</div>
-			<div class="col-3 text-center text-danger">Not Available</div>
-		</div>
-	</div>
-	<div class="row_hover">
-		<div class="row mb-2">
-			<div class="col-3">#123687</div>
-			<div class="col-3 text-center">2018 Cargo Trailer</div>
-			<div class="col-3 text-center">$1800</div>
-			<div class="col-3 text-center text-danger">Not Available</div>
-		</div>
-	</div>
-	<div class="row_hover">
-		<div class="row mb-2">
-			<div class="col-3">#687496</div>
-			<div class="col-3 text-center">2008 Semi Truck</div>
-			<div class="col-3 text-center">$950</div>
-			<div class="col-3 text-center text-danger">Not Available</div>
-		</div>
-	</div>
-	<hr class="mt-5">
-</div>
-<!-- Shippments in transit -->
-<div class="container text-capitalize">
-	<h3 class="mx-4 my-4">Shippments in transit</h3>
-	<div class="row text-primary font-weight-bold mb-3">
-		<div class="col-3">Stock #</div>
-		<div class="col-3 text-center">Desription</div>
-		<div class="col-2 text-center">Pickup Date</div>
-		<div class="col-2 text-center">Delivery Date</div>
-		<div class="col-2 text-center">Price</div>
-	</div>
-	<div class="row mb-2 row_hover">
-		<div class="col-3">6598745</div>
-		<div class="col-3 text-center">2012 Honda Accord</div>
-		<div class="col-2 text-center">2/11/19</div>
-		<div class="col-2 text-center">2/14/19</div>
-		<div class="col-2 text-center">$800 USD</div>
-	</div>
-	<div class="row mb-2 row_hover">
-		<div class="col-3">6584123</div>
-		<div class="col-3 text-center">2018 Contender Boat</div>
-		<div class="col-2 text-center">2/12/19</div>
-		<div class="col-2 text-center">2/17/19</div>
-		<div class="col-2 text-center">$2100 USD</div>
-	</div>
-	<hr class="mt-5">
+<!--watchlist-->
+<div class="text-capitalize my-5 px-5">
+    <table id="myTable" class="table table-sm table-hover">
+      <thead>
+        <tr class="text-primary">
+          <th class="align-middle" scope="col">
+            <div class="form-check">
+              <input class="form-check-input position-static" type="checkbox"  value="option1" aria-label="...">
+            </div>
+          </th>
+          <th class="align-middle " scope="col">Image</th>
+          <th class="align-middle" scope="col">stock #</th>
+          <th class="align-middle " scope="col">year</th>
+          <th class="align-middle" scope="col">make</th>
+          <th class="align-middle" scope="col">model</th>
+          <th class="align-middle" scope="col">pickup date</th>
+          <th class="align-middle" scope="col">delivery date</th>
+          <th class="align-middle " scope="col">pickup location</th>
+          <th class="align-middle " scope="col">deliver location</th>
+          <th class="align-middle " scope="col">App. retail value</th>
+          <th class="align-middle" scope="col">trip</th>
+          <th class="align-middle mobile-p" scope="col">price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="align-middle">
+            <div class="form-check">
+              <input class="form-check-input position-static" type="checkbox"  value="option1" aria-label="...">
+            </div>
+          </td>
+          <td class="align-middle "><img class="rounded" src="https://picsum.photos/70" alt=""></td>
+          <td class="align-middle">#10778</td>
+          <td class="align-middle ">2015</td>
+          <td class="align-middle">mako</td>
+          <td class="align-middle"></td>
+          <td class="align-middle">9/15/19</td>
+          <td class="align-middle">9/18/19</td>
+          <td class="align-middle ">GA-Atlanta</td>
+          <td class="align-middle ">OH-Daytona</td>
+          <td class="align-middle ">$350000</td>
+          <td class="align-middle">433 miles</td>
+          <td class="align-middle mobile-p">$3000<br>$6.92/mile</td>
+        </tr>
+        <tr>
+          <td class="align-middle">
+            <div class="form-check">
+              <input class="form-check-input position-static" type="checkbox"  value="option1" aria-label="...">
+            </div>
+          </td>
+          <td class="align-middle "><img class="rounded" src="https://picsum.photos/70" alt=""></td>
+          <td class="align-middle">#6577894</td>
+          <td class="align-middle ">2016</td>
+          <td class="align-middle">BMW</td>
+          <td class="align-middle">550i</td>
+          <td class="align-middle">8/29/19</td>
+          <td class="align-middle">9/1/19</td>
+          <td class="align-middle ">FL-Miami</td>
+          <td class="align-middle ">NC-Mocksvil</td>
+          <td class="align-middle ">$25000</td>
+          <td class="align-middle">790 miles</td>
+          <td class="align-middle mobile-p">$700<br>$1.12/mile</td>
+        </tr>
+        <tr>
+
+          <td class="align-middle">
+            <div class="form-check">
+              <input class="form-check-input position-static" type="checkbox"  value="option1" aria-label="...">
+            </div>
+          </td>
+          <td class="align-middle bigdesktop"><img class="rounded" src="https://picsum.photos/70" alt=""></td>
+          <td class="align-middle">#354982</td>
+          <td class="align-middle btwtabllandp">2019</td>
+          <td class="align-middle">keystone</td>
+          <td class="align-middle">cougar</td>
+          <td class="align-middle">10/18/19</td>
+          <td class="align-middle">10/11/19</td>
+          <td class="align-middle">TX-Andrews</td>
+          <td class="align-middle">TX-Waco</td>
+          <td class="align-middle tabletp">$22000</td>
+          <td class="align-middle">355 miles</td>
+          <td class="align-middle mobile-p">$800<br>$2.25/mile</td>
+        </tr>
+      </tbody>
+    </table>
 </div>
 <!-- footer-->
 <footer>
@@ -237,16 +209,18 @@
 	</div>
 </footer>
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<!-- owl JS-->
-<script src="../js/owl.carousel.min.js"></script>
-<!-- Latest compiled bootstrap -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <!--datatabl js-->
-<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Popper JS --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+<!--Bootstrap Datepicker js--> 
+<script src="../js/bootstrap-datepicker.min.js"></script> 
+<!-- datatable js-->
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>
