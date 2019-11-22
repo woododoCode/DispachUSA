@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DispatchUSA</title>
+<!--	Bootstrap css-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!--Font awesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<!--User css-->
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/registration.css">
+<!--Fonts-->
+<link rel="stylesheet" href="../fonts/Kefa-Regular.TTF">
+</head>
+
+<body>
+<nav class="navbar header"> <a class="navbar-brand" href="#"><img src="../img/logo.png" alt=""></a> </nav>
+<nav class="navbar navi navbar-expand-xl">
+  <div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i></button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav">
+        <li class="nav-item "> <a class="nav-link" href="#">Dashboard</a> </li>
+        <li class="nav-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> My Account </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">Transportation archive</a> <a class="dropdown-item" href="#">My Ratings</a> <a class="dropdown-item" href="#">Account Details</a> </div>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Serch Now</a> </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Messages </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="#">Sent</a> <a class="dropdown-item" href="#">Received</a> </div>
+        </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Offers </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown3"> <a class="dropdown-item" href="#">Active Offers</a> <a class="dropdown-item" href="#">Declined Offers</a> <a class="dropdown-item" href="#">Expired Offers</a> </div>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Watchlist</a> </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Shipments </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown4"> <a class="dropdown-item" href="#">In Transit</a> <a class="dropdown-item" href="#">Delivered</a> <a class="dropdown-item" href="#">Cancelled</a> <a class="dropdown-item" href="#">Problematic</a> </div>
+        </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Support </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown5"> <a class="dropdown-item" href="#">FAQ</a> <a class="dropdown-item" href="#">Website information</a> <a class="dropdown-item" href="#">How It Works</a> <a class="dropdown-item" href="#">Live Chat</a> <a class="dropdown-item" href="#">Customer Service</a> <a class="dropdown-item" href="#">Make a complaint</a> <a class="dropdown-item" href="#">Report a user</a> </div>
+        </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> English </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown6"> <a class="dropdown-item" href="#">Espanol</a> <a class="dropdown-item" href="#">Русский</a> <a class="dropdown-item" href="#">Українська</a> </div>
+        </li>
+      </ul>
+      <p class="text-center">Welcome dear NoName</p>
+      <ul class="register nav navbar-nav navbar-right">
+        <li class="nav-item"> <a class="nav-link" href="#">Sign out</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row d-flex justify-content-center my-5"> 
+    <!--User info-->
+    <div class="col-12 col-md-6 my-2">
+      <h4 class="text-primary">User info</h4>
+      <dl class="row">
+        <dt class="col-6 col-md-4 border-bottom-1">Name:</dt>
+        <dd class="col-6 col-md-8">Gordon Freeman</dd>
+        <dt class="col-6 col-md-4">Email:</dt>
+        <dd class="col-6 col-md-8">freeman@never.die</dd>
+        <dt class="col-6 col-md-4">User ID</dt>
+        <dd class="col-6 col-md-8">68686868</dd>
+        <dt class="col-7 col-md-5"><hr width="85%" align="left" class="my-1"><a data-toggle="modal" href="#passModal">Change Password</a></dt>
+        <dd class="col-5 col-md-7"></dd>
+        <dt class="col-7 col-md-5"><hr width="85%" align="left" class="my-1"><a data-toggle="modal" href="#emailModal">Change Email</a></dt>
+        <dd class="col-5 col-md-7"></dd>
+      </dl>
+    </div>
+    <!--User info end--> 
+    <!--Company info-->
+    <div class="col-12 col-md-6 my-2">
+      <h4 class="text-primary">Company info</h4>
+      <dl class="row">
+        <dt class="col-6 col-md-4">Company name:</dt>
+        <dd class="col-6 col-md-8">Black Mesa</dd>
+        <dt class="col-6 col-md-4">Company adress:</dt>
+        <dd class="col-6 col-md-8">3800 Queen Palm Dr.,33610</dd>
+        <dt class="col-6 col-md-4">Country:</dt>
+        <dd class="col-6 col-md-8">USA</dd>
+        <dt class="col-6 col-md-4">State:</dt>
+        <dd class="col-6 col-md-8">FL-Florida</dd>
+        <dt class="col-6 col-md-4">City:</dt>
+        <dd class="col-6 col-md-8">Tampa</dd>
+        <dt class="col-6 col-md-4">Phone number:</dt>
+        <dd class="col-6 col-md-8 align-self-center">+1(813)111-1111</dd>
+        <dt class="col-6 col-md-4">Phone extention:</dt>
+        <dd class="col-6 col-md-8 align-self-center">+1(813)111-1112</dd>
+      </dl>
+    </div>
+    <!--Company info end--> 
+    <!--Insurance info-->
+    <div class="col-12 col-md-6 my-2">
+      <h4 class="text-primary">Insurance info</h4>
+      <dl class="row">
+        <dt class="col-6 col-md-4 border-bottom-1">Type of company:</dt>
+        <dd class="col-6 col-md-8">Excess</dd>
+        <dt class="col-6 col-md-4">Agent:</dt>
+        <dd class="col-6 col-md-8">Man with Case</dd>
+        <dt class="col-6 col-md-4">City and State:</dt>
+        <dd class="col-6 col-md-8">Tampa, FL</dd>
+        <dt class="col-6 col-md-4">Phone number:</dt>
+        <dd class="col-6 col-md-8 align-self-center">+1(813)111-1111</dd>
+        <dt class="col-6 col-md-4">Insurance limit:</dt>
+        <dd class="col-6 col-md-8">$1000000000</dd>
+        <dt class="col-6 col-md-4">Insurance deductible:</dt>
+        <dd class="col-6 col-md-8">$10000000</dd>
+      </dl>
+    </div>
+    <!--Insurance info end--> 
+    <!--Inventory info-->
+    <div class="col-12 col-md-6 my-2">
+      <h4 class="text-primary">Inventory</h4>
+      <dl class="row">
+        <dt class="col-6 col-md-4">Number of trucks:</dt>
+        <dd class="col-6 col-md-8">25</dd>
+        <dt class="col-6 col-md-4">Equipment discription:</dt>
+        <dd class="col-6 col-md-8">12 long-trailers<br>
+          13 bot trailers</dd>
+        <dt class="col-6 col-md-4">Route Description</dt>
+        <dd class="col-6 col-md-8">Tampa(FL)-Sacramento(CA)-Salt Lake City(UT)</dd>
+      </dl>
+    </div>
+    <!--Inventory info end--> 
+  </div>
+</div>
+<!-- footer-->
+<footer>
+  <div class="container">
+    <div class="row justify-content-between">
+      <div> <a href="index.html">©DispatchUSA.com</a> <a href="#">All rights reserved</a> </div>
+      <div> <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a> </div>
+      <div> <a href="#">Developed: start point studio</a> </div>
+    </div>
+  </div>
+</footer>
+<!-- Password change Modal -->
+<div class="modal fade" id="passModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Change password</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="currPass">Curent password</label>
+            <input type="password" class="form-control" id="currPass" placeholder="Curent Password">
+          </div>
+          <div class="form-group">
+            <label for="newPass">New Password</label>
+            <input type="password" class="form-control" id="newPass" placeholder="New Password">
+          </div>
+          <div class="form-group">
+            <label for="confirmNewPass">Confirm New Password</label>
+            <input type="password" class="form-control" id="confirmNewPass" placeholder=" Confirm New Password">
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div><!-- Password change Modal End-->
+<!-- Email change Modal -->
+<div class="modal fade" id="emailModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Change Email Adress</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="currEmail">Curent Email</label>
+            <input type="email" class="form-control" id="currEmail" placeholder="Curent Email">
+          </div>
+          <div class="form-group">
+            <label for="newEmail">New Email</label>
+            <input type="password" class="form-control" id="newEmail" placeholder="New Email">
+          </div>
+          <div class="form-group">
+            <label for="confirmNewEmail">Confirm New Email</label>
+            <input type="password" class="form-control" id="confirmNewEmail" placeholder=" Confirm New Email">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div><!-- Email change Modal End-->
+<!-- jQuery library --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+<!-- Popper JS --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+<!-- Latest compiled bootstrap --> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+<!--datatabl js-->
+</body>
+</html>

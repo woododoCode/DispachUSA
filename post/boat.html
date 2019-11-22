@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DispatchUSA</title>
+<!--	Bootstrap css-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!--Font awesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../fonts/Kefa-Regular.TTF">
+<!--User css-->
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/registration.css">
+<!--Fonts-->
+</head>
+<body>
+<h1 class=" mt-5 text-primary text-center">Post form for boat</h1>
+<!--pickup photos-->
+<div class="container ">
+  <h5>Pickup Photos</h5>
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2 imgUp">
+      <div class="imagePreview"></div>
+      <label class="btn btn-primary">Upload
+        <input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+      </label>
+    </div>
+    <i class="fa fa-plus imgAdd"></i> </div>
+</div>
+<!-- pickup photos end -->
+
+<div class="container">
+  <div class="row"> 
+    <!--info 1-->
+    <div class="col-md-6 col-lg-6">
+      <form>
+        <div class="form-group row">
+          <label for="Year" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">Year</label>
+          <div class="col-8 col-sm-10">
+            <input type="text" class="form-control" id="Year">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="make" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">Make</label>
+          <div class="col-8 col-sm-10">
+            <input type="text" class="form-control" id="make">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="model" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">Model</label>
+          <div class="col-8 col-sm-10">
+            <input type="text" class="form-control" id="model">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="vin" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">VIN</label>
+          <div class="col-8 col-sm-10">
+            <input type="text" class="form-control" id="vin">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="color" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">Color</label>
+          <div class="col-8 col-sm-10 ">
+            <input type="text" class="form-control" id="color">
+          </div>
+        </div>
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-6 col-sm-4 col-md-5 col-lg-4 pt-0 pl-5 pl-sm-0">Keys</legend>
+            <div class="col-6 col-sm-8 col-md-7 col-lg-8">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="keysYes" value="option1">
+                <label class="form-check-label" for="keysYes">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="keysNo" value="option2">
+                <label class="form-check-label" for="keysNo">No</label>
+              </div>
+            </div>
+            <legend class="col-form-label col-6 col-sm-4 col-md-5 col-lg-4 pt-0 pl-5 pl-sm-0">Trailer</legend>
+            <div class="col-6 col-sm-8 col-md-7 col-lg-8">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="trailerYes" value="option1">
+                <label class="form-check-label" for="trailerYes">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="trailerNo" value="option2">
+                <label class="form-check-label" for="trailerNo">No</label>
+              </div>
+            </div>
+            <legend class="col-form-label col-6 col-sm-4 col-md-5 col-lg-4 pt-0 pl-5 pl-sm-0">Pickup from water</legend>
+            <div class="col-6 col-sm-8 col-md-7 col-lg-8 pt-3 pt-sm-0">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="waterYes" value="option1">
+                <label class="form-check-label" for="waterYes">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="waterNo" value="option2">
+                <label class="form-check-label" for="waterNo">No</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <legend class="col-form-label col-6 col-sm-4 col-md-5 col-lg-4 pt-0 pl-5 pl-sm-0">Run and Drive</legend>
+            <div class="col-6 col-sm-8 col-md-7 col-lg-8 pt-3 pt-sm-0">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="runAndDriveYes" value="option1">
+                <label class="form-check-label" for="runAndDriveYes">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="runAndDriveno" value="option2">
+                <label class="form-check-label" for="runAndDriveNo">No</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <!--info 1 end--> 
+    <!--info 2-->
+    <div class="col-md-6 col-lg-6">
+      <form>
+        <div class="form-group row">
+          <label for="damage" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">Damage</label>
+          <div class="col-8 col-sm-10 ">
+            <input type="text" class="form-control" id="damage">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="lot" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">Lot #</label>
+          <div class="col-8 col-sm-10 ">
+            <input type="text" class="form-control" id="lot">
+          </div>
+        </div>
+        <p class="font-weight-bolder mb-2">Boat Dimensions (Ft)</p>
+        <div class="form-group row">
+          <label for="height" class="col-4 col-sm-2 col-form-label ">Height</label>
+          <div class="col-8 col-sm-4  mb-2">
+            <input type="text" class="form-control" id="height">
+          </div>
+          <label for="length" class="col-4 col-sm-2 col-form-label">Length</label>
+          <div class="col-8 col-sm-4 mb-2">
+            <input type="text" class="form-control" id="length">
+          </div>
+          <label for="width" class="col-4 col-sm-2 col-form-label">Width</label>
+          <div class="col-8 col-sm-4 mb-2">
+            <input type="text" class="form-control" id="width">
+          </div>
+          <label for="weight" class="col-4 col-sm-2 col-form-label">Weight</label>
+          <div class="col-8 col-sm-4 mb-2">
+            <input type="text" class="form-control" id="weight">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="odometer" class="col-4 col-sm-2 col-form-label pl-4 pl-sm-0">Odometer</label>
+          <div class="col-8 col-sm-10 ">
+            <input type="text" class="form-control" id="odometer">
+          </div>
+        </div>
+        <div class="row">
+          <legend class="col-form-label col-7 col-sm-4 col-md-5 pt-0 pl-sm-0">Drop into Water When Delivered</legend>
+          <div class="col-5 col-sm-8 col-md-7">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="dropYes" value="option1">
+              <label class="form-check-label" for="dropYes">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="dropNo" value="option2">
+              <label class="form-check-label" for="dropNo">No</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="axels" class="col-8 col-sm-4 col-md-6 col-lg-5 col-form-label pl-sm-0">Number of Trailer Axels</label>
+          <div class="col-4 col-sm-8 col-md-6 col-lg-7 ml-0">
+            <input type="text" class="form-control" id="axels">
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--info 2--> 
+  </div>
+</div>
+
+<!--Delivery photos-->
+<div class="container ">
+  <h5>Delivery Photos</h5>
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2 imgUp">
+      <div class="imagePreview"></div>
+      <label class="btn btn-primary">Upload
+        <input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+      </label>
+    </div>
+    <i class="fa fa-plus imgAdd"></i> </div>
+</div>
+<!-- pickup photos end -->
+<div class="container">
+  <div class="col-12">
+    <div class="form-group row">
+      <label for="desription">
+      <h5>Desciption</h5>
+      </label>
+      <textarea class="form-control" id="desription" rows="1"></textarea>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h5>Pickup Location</h5>
+      <div class="form-group row">
+        <label for="pickupAddress" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">Physical Address</label>
+        <div class="col-8 col-sm-10">
+          <textarea class="form-control mt-2" id="pickupAddress" rows="1"></textarea>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="pickupCity" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">City</label>
+        <div class="col-8 col-sm-10">
+          <input type="text" class="form-control" id="pickupCity">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="pickupState" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">State</label>
+        <div class="col-8 col-sm-10">
+          <input type="text" class="form-control" id="pickupState">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="pickupZip" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">ZIP Code</label>
+        <div class="col-8 col-sm-10">
+          <input type="text" class="form-control" id="pickupZip">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="pickupCountry" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">Country</label>
+        <div class="col-8 col-sm-10">
+          <input type="text" class="form-control" id="pickupCountry">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="pickupTelephone" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">Telephone</label>
+        <div class="col-8 col-sm-10">
+          <input type="text" class="form-control" id="pickupTelephone">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="pickupName" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">Name</label>
+        <div class="col-8 col-sm-10">
+          <input type="text" class="form-control" id="pickupName">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h5>Delivery Location</h5>
+      <div class="form-group row">
+        <label for="delivAddress" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">Physical Address</label>
+        <div class="col-8 col-sm-10">
+          <textarea class="form-control mt-2" id="delivAddress" rows="1"></textarea>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="delivCity" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">City</label>
+        <div class="col-8 col-sm-10">
+          <input type="text" class="form-control" id="delivCity">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="delivState" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">State</label>
+        <div class="col-8 col-sm-10">
+          <input type="text" class="form-control" id="delivState">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="delivZip" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">ZIP Code</label>
+        <div class="col-8 col-sm-10">
+          <input type="text" class="form-control" id="delivZip">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="delivCountry" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">Country</label>
+        <div class="col-8 col-sm-10">
+          <input type="text" class="form-control" id="delivCountry">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="delivTelephone" class="col-4 col-sm-2 col-form-label pl-sm-0">Telephone</label>
+        <div class="col-8 col-sm-10">
+          <input type="text" class="form-control" id="delivTelephone">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="delivName" class="col-4 col-sm-2 col-form-label pl-5 pl-sm-0">Name</label>
+        <div class="col-8 col-sm-10">
+          <input type="text" class="form-control" id="delivName">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="form-group row">
+        <label for="delivPrice" class="col-7 col-sm-4 col-md-5 col-lg-4 col-form-label pl-4 pl-md-0">
+        <h5 class="text-primary">Delivery Price</h5>
+        </label>
+        <div class="col-5 col-sm-8 col-md-7 col-lg-8">
+          <input type="text" class="form-control" id="delivPrice">
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="form-group row">
+        <label for="offerPrice" class="col-7 col-sm-4 col-md-5 col-lg-4 col-form-label pl-4 pl-md-0">
+        <h5 class="text-primary">Offer Price</h5>
+        </label>
+        <div class="col-5 col-sm-8 col-md-7 col-lg-8">
+          <input type="text" class="form-control" id="offerPrice">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container d-flex justify-content-end mb-5">
+  <button type="button" class="btn btn-primary btn-lg">Post</button>
+</div>
+<!-- jQuery library --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+<!-- Popper JS --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+<!-- Latest compiled bootstrap --> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+<script src="../js/main.js"></script>
+</body>
+</html>
