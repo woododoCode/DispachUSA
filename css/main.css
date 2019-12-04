@@ -279,6 +279,84 @@ li a:hover{
   cursor:pointer;
   font-size:15px;
 }
+
+
+/*login modal*/
+.modal-login {
+		color: #636363;
+		width: 350px;
+	}
+	.modal-login .modal-content {
+		padding: 20px;
+		border-radius: 5px;
+		border: none;
+	}
+	.modal-login .modal-header {
+		border-bottom: none;
+		position: relative;
+		justify-content: center;
+	}
+	.modal-login h4 {
+		text-align: center;
+		font-size: 26px;
+	}
+	.modal-login  .form-group {
+		position: relative;
+	}
+	.modal-login i {
+		position: absolute;
+		left: 13px;
+		top: 11px;
+		font-size: 18px;
+	}
+	.modal-login .form-control {
+		padding-left: 40px;
+	}
+	.modal-login .form-control:focus {
+		border-color: #12b5e5;
+	}
+	.modal-login .form-control, .modal-login .btn {
+		min-height: 40px;
+		border-radius: 3px; 
+        transition: all 0.5s;
+	}
+	.modal-login .close {
+        position: absolute;
+		top: -5px;
+		right: -5px;
+	}
+    .modal-login input[type="checkbox"] {
+        margin-top: 1px;
+    }
+    .modal-login .forgot-link {
+        color: #12b5e5;
+        float: right;
+    }
+	.modal-login .btn {
+		background: #0d3c80;
+		border: 1px solid #0d3c80;
+    border-radius: 3px;
+		line-height: normal;
+	}
+	.modal-login .btn:hover, .modal-login .btn:focus {
+		background: white;
+    color: #0d3c80;
+    
+	}
+	.modal-login .modal-footer {
+		color: #999;
+		border: none;
+		text-align: center;
+		border-radius: 5px;
+		font-size: 13px;
+        margin-top: -20px;
+		justify-content: center;
+	}
+	.modal-login .modal-footer a {
+		color: #12b5e5;
+	}
+
+/*login modal ends*/
 @media (min-width: 992.1px) and (max-width: 1199px){
 	.nav_capture{
 	bottom: 267px;
