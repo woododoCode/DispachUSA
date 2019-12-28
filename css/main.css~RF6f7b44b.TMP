@@ -21,7 +21,11 @@ nav li{
 	font-size: 600;
 	transition: 0.5s;
 }
-
+.register a:hover{
+	background: white;
+	color: #0d3c80!important;
+	border: 1px solid #0d3c80;
+}
 p{
 	margin: 0;
 	margin-right: 10px;
@@ -41,25 +45,11 @@ p{
 	border-radius: 3px;
 	color: white;
 }
-.register  a{
-  
-}
-.navbar-right a{
-  cursor: pointer;
-}
-.navbar-right a:hover{
-	background: white!important;
-	color: #0d3c80!important;
-	border: 1px solid #0d3c80;
-}
 .navbar i{
 	color: white;
 }
 .dropdown-menu a{
 	color: black;
-}
-.dropdown-menu{
-  min-width: 13rem;
 }
 .dropdown-item:hover{
 	background-color: #FED74E;
@@ -245,7 +235,6 @@ p{
 .imagePreview {
     width: 100%;
     height: 180px;
-  margin-bottom: -5px;
     background-position: center center;
   background:url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
   background-color:#fff;
@@ -257,6 +246,8 @@ p{
 {
   display:block;
   border-radius:0px;
+  box-shadow:0px 4px 6px 2px rgba(0,0,0,0.2);
+  margin-top:-5px;
 }
 .imgUp
 {

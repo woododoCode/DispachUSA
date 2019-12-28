@@ -46,7 +46,7 @@ $(document).ready(function () {
     // submit
     $('.registration-form').on('submit', function (e) {
 
-        $(this).find('input[type="text"],input[type="email"],').each(function () {
+        $(this).find('input[type="text"],input[type="email"], textarea').each(function () {
             if ($(this).val() == "") {
                 e.preventDefault();
                 $(this).addClass('input-error');

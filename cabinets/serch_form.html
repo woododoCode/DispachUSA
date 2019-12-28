@@ -15,6 +15,8 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <!-- datatable css-->
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.css"/>
+  
+  <link rel="stylesheet" href="../css/bootstrap-multiselect.css" type="text/css">
 <!--User css-->
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/registration.css">
@@ -34,9 +36,18 @@
         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> My Account </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">Transportation archive</a> <a class="dropdown-item" href="#">My Ratings</a> <a class="dropdown-item" href="#">Account Details</a> </div>
         </li>
-        <li class="nav-item active"> <a class="nav-link" href="#">Serch Now</a> </li>
-        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Messages </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="#">Sent</a> <a class="dropdown-item" href="#">Received</a> </div>
+        <li class="nav-item active"> 
+          <a class="nav-link" href="#"> 
+            Search Now</a>
+          
+        </li>
+        <li class="nav-item dropdown"> 
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+            Messages </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2"> 
+            <a class="dropdown-item" href="#">Sent</a> 
+            <a class="dropdown-item" href="#">Received</a> 
+          </div>
         </li>
         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Offers </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown3"> <a class="dropdown-item" href="#">Active Offers</a> <a class="dropdown-item" href="#">Declined Offers</a> <a class="dropdown-item" href="#">Expired Offers</a> </div>
@@ -60,10 +71,31 @@
   </div>
 </nav>
 <!-- serch form -->
-
 <div class="container w-75 mt-5">
+<div class="col-md-5 col-12">
+  <h5>Search Category</h5>
+    <select id="demo" multiple="multiple">
+      <option value="Car">Car</option>
+      <option value="Boat">Boat</option>
+      <option value="Cargo">Cargo</option>
+      <option value="Trailer">Trailer</option>
+      <option value="RV">RV</option>
+      <option value="Industrial Equipment">Industrial Equipment</option>
+      <option value="Heavy Duty Trucks">Heavy Duty Trucks</option>
+      <option value="Trucks">Trucks</option>
+      <option value="Motorcycle">Motorcycle</option>
+      <option value="Jet Ski">Jet Ski</option>
+      <option value="ATV">ATV</option>
+      <option value="Others">Others</option>
+    </select>
+    </div>
+  </div>
+<div class="container w-75 mt-4">
   <div class="row d-flex justify-content-around"> 
     <!-- location-->
+    
+    
+    
     <div class="col-md-5 col-12">
       <h5>From:</h5>
       <div class="form-group">
@@ -177,7 +209,7 @@
   </div>
 </div>
 <!--Search resaults-->
-  <div class="text-capitalize px-5">
+  <div class="text-capitalize container-fluid px-5">
     <table id="myTable" class="table table-sm table-hover">
       <thead>
         <tr class="text-primary">
@@ -287,6 +319,9 @@
 <script src="../js/bootstrap-datepicker.min.js"></script> 
 <!-- datatable js-->
   <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.js"></script>
+  
+  <script type="text/javascript" src="../js/bootstrap-multiselect.js"></script>
+  
 <script src="../js/main.js"></script>
 </body>
 </html>

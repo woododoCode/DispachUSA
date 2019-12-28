@@ -14,16 +14,12 @@
 <!--Fonts-->
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <!--datatabl css-->
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.css"/>
 <!--User css-->
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/registration.css">
 <!--Fonts-->
 <link rel="stylesheet" href="../fonts/Kefa-Regular.TTF">
 </head>
-
- 
 
 <body>
 <nav class="navbar header">
@@ -47,29 +43,32 @@
 					</div>
 				</li>
 				<li class="nav-item">
+					<a class="nav-link" data-toggle="modal" data-target="#post_now"> Post Now </a>
+				</li>
+        <li class="nav-item">
 					<a class="nav-link" href="#">Search Now</a>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Messages </a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Messages </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown3">
 						<a class="dropdown-item" href="#">Sent</a>
 						<a class="dropdown-item" href="#">Received</a>
 					</div>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Offers </a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Offers </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown4">
 						<a class="dropdown-item" href="#">Active Offers</a>
 						<a class="dropdown-item" href="#">Declined Offers</a>
 						<a class="dropdown-item" href="#">Expired Offers</a>
 					</div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Watchlist</a>
+					<a class="nav-link" href="#">Active Listing</a>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Shipments </a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Shipments </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown5">
 						<a class="dropdown-item" href="#">In Transit</a>
 						<a class="dropdown-item" href="#">Delivered</a>
 						<a class="dropdown-item" href="#">Cancelled</a>
@@ -77,8 +76,8 @@
 					</div>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Support </a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown5">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Support </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown6">
 						<a class="dropdown-item" href="#">FAQ</a>
 						<a class="dropdown-item" href="#">Website information</a>
 						<a class="dropdown-item" href="#">How It Works</a>
@@ -89,8 +88,8 @@
 					</div>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> English </a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown6">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown7" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> English </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown7">
 						<a class="dropdown-item" href="#">Espanol</a>
 						<a class="dropdown-item" href="#">Русский</a>
 						<a class="dropdown-item" href="#">Українська</a>
@@ -106,6 +105,7 @@
 		</div>
 	</div>
 </nav>
+
 <!--My offers-->
 <div class="container text-capitalize">
 	<h3 class="mx-4 my-4">My Offers</h3>
@@ -133,7 +133,7 @@
 </div>
 <!-- my watchlist-->
 <div class="container text-capitalize">
-	<h3 class="mx-4 my-4 ">My watchlist</h3>
+	<h3 class="mx-4 my-4 ">My inventory</h3>
 	<div class="row_hover">
 		<div class="row text-primary font-weight-bold mb-3">
 			<div class="col-3">stock #</div>
@@ -218,6 +218,29 @@
 	</div>
 	<hr class="mt-5">
 </div>
+  <!--post select modal-->
+  <div id="post_now" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">				
+				<h4 class="modal-title">Select Post Category</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			</div>
+			<div class="modal-body mb-3">
+				<select class="form-control">
+          <option>Boat</option><!--link for boat form-->
+          <option>Trailer</option><!--lnk for trailer form-->
+          <option>Jet Ski</option><!--link for cargo form-->
+          <option>ATV</option><!--link for cargo form-->
+          <option>Motorcycle</option><!--link for cargo form-->
+          <option>Cargo</option><!--link for cargo form-->
+          <option>Other Shipping</option><!--link for cargo form-->          
+        </select>
+			</div>
+      <div class="modal-footer"><input type="submit" class="btn btn-primary btn-block btn-lg" value="Post"></div>
+		</div>
+	</div>
+</div>  
 <!-- footer-->
 <footer>
 	<div class="container">
@@ -236,6 +259,8 @@
 		</div>
 	</div>
 </footer>
+  
+
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <!-- Popper JS -->
@@ -244,8 +269,6 @@
 <script src="../js/owl.carousel.min.js"></script>
 <!-- Latest compiled bootstrap -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <!--datatabl js-->
-<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

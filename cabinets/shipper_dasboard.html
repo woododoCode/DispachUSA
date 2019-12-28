@@ -42,15 +42,8 @@
 						<a class="dropdown-item" href="#">Account Details</a>
 					</div>
 				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Post Now </a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-						<a class="dropdown-item" href="#">Car</a>
-						<a class="dropdown-item" href="#">Boat</a>
-						<a class="dropdown-item" href="#">Trailer</a>
-						<a class="dropdown-item" href="#">Cargo</a>
-						<a class="dropdown-item" href="#">Others</a>
-					</div>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="modal" data-target="#post_now"> Post Now </a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Messages </a>
@@ -222,6 +215,29 @@
 	</div>
 	<hr class="mt-5">
 </div>
+  <!--post select modal-->
+  <div id="post_now" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">				
+				<h4 class="modal-title">Select Post Category</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			</div>
+			<div class="modal-body mb-3">
+				<select class="form-control">
+          <option>Boat</option><!--link for boat form-->
+          <option>Trailer</option><!--lnk for trailer form-->
+          <option>Jet Ski</option><!--link for cargo form-->
+          <option>ATV</option><!--link for cargo form-->
+          <option>Motorcycle</option><!--link for cargo form-->
+          <option>Cargo</option><!--link for cargo form-->
+          <option>Other Shipping</option><!--link for cargo form-->          
+        </select>
+			</div>
+      <div class="modal-footer"><input type="submit" class="btn btn-primary btn-block btn-lg" value="Post"></div>
+		</div>
+	</div>
+</div>  
 <!-- footer-->
 <footer>
 	<div class="container">
@@ -240,6 +256,7 @@
 		</div>
 	</div>
 </footer>
+  
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
