@@ -470,7 +470,9 @@ p{
 }
 footer{
 	background-color: #002358;
-	padding-top:px;
+	position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 footer a{
