@@ -1,7 +1,11 @@
 /* CSS Document */
 
 nav li{
-	margin-right: 15px;
+	margin-right: 1px;
+  font-size: 1rem;
+}
+nav li a{
+  padding: 5px !important;
 }
 .active{
 	background-color: #ebb701;
@@ -20,12 +24,7 @@ nav li{
 	color: white;
 	font-size: 600;
 	transition: 0.5s;
-}
-
-p{
-	margin: 0;
-	margin-right: 10px;
-	padding: 0;
+  margin: 0 0.2rem;
 }
 .navi{
 	background-color: #656565;
@@ -33,7 +32,6 @@ p{
 }
 .navi li > a{
 	color: white;
-	font-size: 18px;
 	transition: 0.5s;
 }
 .navi li > a:hover{
@@ -41,9 +39,7 @@ p{
 	border-radius: 3px;
 	color: white;
 }
-.register  a{
-  
-}
+
 .navbar-right a{
   cursor: pointer;
 }
