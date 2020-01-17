@@ -73,33 +73,33 @@
             <legend class="col-form-label col-6 col-sm-4 col-md-5 col-lg-4 pt-0 pl-5 pl-sm-0">Keys</legend>
             <div class="col-6 col-sm-8 col-md-7 col-lg-8">
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="keysYes" value="option1">
+                <input class="form-check-input" type="radio" name="Keys" id="keysYes" value="option1">
                 <label class="form-check-label" for="keysYes">Yes</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="keysNo" value="option2">
+                <input class="form-check-input" type="radio" name="Keys" id="keysNo" value="option2">
                 <label class="form-check-label" for="keysNo">No</label>
               </div>
             </div>
             <legend class="col-form-label col-6 col-sm-4 col-md-5 col-lg-4 pt-0 pl-5 pl-sm-0">Trailer</legend>
             <div class="col-6 col-sm-8 col-md-7 col-lg-8">
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="trailerYes" value="option1">
+                <input class="form-check-input" type="radio" name="Trailer" id="trailerYes" value="option1">
                 <label class="form-check-label" for="trailerYes">Yes</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="trailerNo" value="option2">
+                <input class="form-check-input" type="radio" name="Trailer" id="trailerNo" value="option2">
                 <label class="form-check-label" for="trailerNo">No</label>
               </div>
             </div>
             <legend class="col-form-label col-6 col-sm-4 col-md-5 col-lg-4 pt-0 pl-5 pl-sm-0">Pickup from water</legend>
             <div class="col-6 col-sm-8 col-md-7 col-lg-8 pt-3 pt-sm-0">
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="waterYes" value="option1">
+                <input class="form-check-input" type="radio" name="Pickup" id="waterYes" value="option1">
                 <label class="form-check-label" for="waterYes">Yes</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="waterNo" value="option2">
+                <input class="form-check-input" type="radio" name="Pickup" id="waterNo" value="option2">
                 <label class="form-check-label" for="waterNo">No</label>
               </div>
             </div>
@@ -108,11 +108,11 @@
             <legend class="col-form-label col-6 col-sm-4 col-md-5 col-lg-4 pt-0 pl-5 pl-sm-0">Run and Drive</legend>
             <div class="col-6 col-sm-8 col-md-7 col-lg-8 pt-3 pt-sm-0">
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="runAndDriveYes" value="option1">
+                <input class="form-check-input" type="radio" name="Run" id="runAndDriveYes" value="option1">
                 <label class="form-check-label" for="runAndDriveYes">Yes</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="runAndDriveno" value="option2">
+                <input class="form-check-input" type="radio" name="Run" id="runAndDriveno" value="option2">
                 <label class="form-check-label" for="runAndDriveNo">No</label>
               </div>
             </div>
@@ -165,11 +165,11 @@
           <legend class="col-form-label col-7 col-sm-4 col-md-5 pt-0 pl-sm-0">Drop into Water When Delivered</legend>
           <div class="col-5 col-sm-8 col-md-7">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="dropYes" value="option1">
+              <input class="form-check-input" type="radio" name="Drop" id="dropYes" value="option1">
               <label class="form-check-label" for="dropYes">Yes</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="dropNo" value="option2">
+              <input class="form-check-input" type="radio" name="Drop" id="dropNo" value="option2">
               <label class="form-check-label" for="dropNo">No</label>
             </div>
           </div>
@@ -303,26 +303,39 @@
     </div>
   </div>
 </div>
-<div class="container">
+<div class="container mt-5">
   <div class="row">
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-4">
       <div class="form-group row">
-        <label for="delivPrice" class="col-7 col-sm-4 col-md-5 col-lg-4 col-form-label pl-4 pl-md-0">
-        <h5 class="text-primary">Delivery Price</h5>
+        <label for="delivPrice" class="col-7 col-sm-4 col-md-5 col-xl-4  col-form-label pl-4 pl-md-0">
+        <h5 class="text-primary">Delivery Price, $</h5>
         </label>
-        <div class="col-5 col-sm-8 col-md-7 col-lg-8">
+        <div class="col-5 col-sm-8 col-md-7 col-xl-8  mt-lg-3 mt-md-3">
           <input type="text" class="form-control" id="delivPrice">
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-4">
       <div class="form-group row">
-        <label for="offerPrice" class="col-7 col-sm-4 col-md-5 col-lg-4 col-form-label pl-4 pl-md-0">
-        <h5 class="text-primary">Offer Price</h5>
+        <label for="offerPrice" class="col-7 col-sm-4 col-md-5 col-xl-5 col-form-label pl-4 pl-md-0 px-xl-0">
+        <h5 class="text-primary mt-lg-3">Offer Price, $</h5>
         </label>
-        <div class="col-5 col-sm-8 col-md-7 col-lg-8">
+        <div class="col-5 col-sm-8 col-md-7 col-xl-7 mt-lg-3 mt-md-3 px-xl-0">
           <input type="text" class="form-control" id="offerPrice">
         </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 mt-lg-3">
+      <div class="form-group row">
+          <legend class="col-form-label col-8 col-md-6">Offer Accepted</legend>
+          <div class="form-check form-check-inline col-2 mx-0 mx-md-2 px-0">
+            <input class="form-check-input" type="radio" name="offer" id="offerYes" value="option1">
+            <label class="form-check-label" for="keysYes">Yes</label>
+          </div>
+          <div class="form-check form-check-inline col-2 mx-0">
+            <input class="form-check-input" type="radio" name="offer" id="offerNo" value="option2">
+            <label class="form-check-label" for="keysNo">No</label>
+          </div>
       </div>
     </div>
   </div>
