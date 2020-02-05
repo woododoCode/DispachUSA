@@ -2,10 +2,10 @@ $(document).ready(function () {
     $('.registration-form fieldset:first-child').fadeIn('fast');
 
     $('.registration-form input[type="text"]').on('focus', function () {
-        $(this).removeClass('input-error');
+        $(this).removeClass('is-invalid');
     });
     $('.registration-form textarea').on('focus', function () {
-        $(this).removeClass('input-error');
+        $(this).removeClass('is-invalid');
     });
     // next step
     $('.registration-form .btn-primary').on('click', function () {
@@ -16,10 +16,10 @@ $(document).ready(function () {
         if(checked) {
           parent_fieldset.find('input[type="text"],input[type="email"], textarea').each(function () {
             if ($(this).val() == "") {
-                $(this).addClass('input-error');
+                $(this).addClass('is-invalid');
                 next_step = false;
             } else {
-                $(this).removeClass('input-error');
+                $(this).removeClass('is-invalid');
               
             }
         });
@@ -49,9 +49,9 @@ $(document).ready(function () {
         $(this).find('input[type="text"],input[type="email"], textarea').each(function () {
             if ($(this).val() == "") {
                 e.preventDefault();
-                $(this).addClass('input-error');
+                $(this).addClass('is-invalid');
             } else {
-                $(this).removeClass('input-error');
+                $(this).removeClass('is-invalid');
             }
         });
 

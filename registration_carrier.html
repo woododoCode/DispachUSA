@@ -143,7 +143,7 @@
 				</div>
 				<div class="col-md-6 form-group">
 					<label for="phone_extention">Phone Extention</label>
-					<input id="phone_extention" name="phone_extention" placeholder="Phone Extention" type="text" class="form-control">
+					<input id="phone_extention" name="phone_extention" placeholder="Phone Extention" type="text" value="Phone Extention" class="form-control">
 				</div>
 			</div>
 			<div class="form-group form-check">
@@ -288,7 +288,7 @@
             <div class="col-xl-10 ">
               <div class="custom-file col-xl-12">
                 <input type="file" class="" id="driver_license_img">
-                <label class="custom-file-label" for="liability_insurance_img">Click Here to Upload Picture of Driver License</label>
+                <label class="custom-file-label" for="driver_license_img">Click Here to Upload Picture of Driver License</label>
               </div>
             </div>
           </div>
@@ -304,11 +304,15 @@
 <!-- jQuery library --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
 <!-- Popper JS --> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
-<!-- owl JS--> 
-<script src="js/owl.carousel.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>  
 <!-- Latest compiled bootstrap -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
 <script src="js/registration.js"></script>
+  <script>
+    $('input[type="file"]').change(function(e){
+        var fileName = e.target.files[0].name;
+        $(this).parent().find('.custom-file-label').html(fileName);
+    });
+</script>
 </body>
 </html>

@@ -51,7 +51,7 @@
   </div>
 </nav>
 <div class="col-md-12 registration_header text-center">Register Form for Broker</div>
-<form role="form" class="registration-form" action="javascript:void(0);">
+<form role="form" class="registration-form">
   <fieldset>
     <div class="form-bottom container-fluid row px-5">
       <div class="col-lg-9">
@@ -173,8 +173,8 @@
             </div>
             <div class="col-xl-10">
               <div class="custom-file col-xl-12">
-                <input type="file" class="" id="broker_license_img">
-                <label class="custom-file-label" for="broker_license_img">Click Here to Upload Picture of Broker License</label>
+                <input type="file" class="" id="broker_license_img" >
+                <label class="custom-file-label" for="broker_license_img" >Click Here to Upload Picture of Broker License</label>
               </div>
             </div>
           </div>
@@ -310,7 +310,7 @@
             <div class="col-xl-10 ">
               <div class="custom-file col-xl-12">
                 <input type="file" class="" id="driver_license_img">
-                <label class="custom-file-label" for="liability_insurance_img">Click Here to Upload Picture of Driver License</label>
+                <label class="custom-file-label" for="driver_license_img">Click Here to Upload Picture of Driver License</label>
               </div>
             </div>
           </div>
@@ -330,7 +330,18 @@
 <!-- owl JS--> 
 <script src="js/owl.carousel.min.js"></script> 
 <!-- Latest compiled bootstrap --> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Bootstrap Validate-->
+<script src="js/bootstrap-validate.js"></script>
+<!--Custom js-->
 <script src="js/registration.js"></script>
+<script>
+    $('input[type="file"]').change(function(e){
+        var fileName = e.target.files[0].name;
+        $(this).parent().find('.custom-file-label').html(fileName);
+    });
+</script>
+  
+
 </body>
 </html>

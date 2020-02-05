@@ -3,11 +3,6 @@ $(document).ready(function () {
   //Mutiselect form
   $('#demo').multiselect();
   //multiends
-  $('.datapicker').datepicker({
-  autoclose: true,
-  todayHighlight: true,
-  toggleActive: true
-});
   $('#myTable').DataTable({
     responsive: {
       details: {
