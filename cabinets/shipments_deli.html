@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DispatchUSA</title>
+<!--	Bootstrap css-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!--Bootstrap Datepicker-->
+<link rel="stylesheet" href="../css/bootstrap-datepicker3.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<!-- datatable css-->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.css"/>
+<link rel="stylesheet" href="../css/bootstrap-multiselect.css" type="text/css">
+<!--User css-->
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/registration.css">
+
+<!--Fonts-->
+<link rel="stylesheet" href="../fonts/Kefa-Regular.TTF">
+</head>
+
+<body>
+<nav class="navbar header"> <a class="navbar-brand" href="#"><img src="../img/logo.png" alt=""></a> </nav>
+<nav class="navbar navi navbar-expand-xl">
+  <div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i></button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav">
+        <li class="nav-item "> <a class="nav-link" href="#">Dashboard</a> </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> My Account </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">Transportation archive</a> <a class="dropdown-item" href="#">My Ratings</a> <a class="dropdown-item" href="#">Account Details</a> </div>
+        </li>
+        <li class="nav-item active"> <a class="nav-link" href="#"> Search Now</a> </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Messages </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="#">Sent</a> <a class="dropdown-item" href="#">Received</a> </div>
+        </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Offers </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown3"> <a class="dropdown-item" href="#">Active Offers</a> <a class="dropdown-item" href="#">Declined Offers</a> <a class="dropdown-item" href="#">Expired Offers</a> </div>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Watchlist</a> </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Shipments </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown4"> <a class="dropdown-item" href="#">In Transit</a> <a class="dropdown-item" href="#">Delivered</a> <a class="dropdown-item" href="#">Cancelled</a> <a class="dropdown-item" href="#">Problematic</a> </div>
+        </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Support </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown5"> <a class="dropdown-item" href="#">FAQ</a> <a class="dropdown-item" href="#">Website information</a> <a class="dropdown-item" href="#">How It Works</a> <a class="dropdown-item" href="#">Live Chat</a> <a class="dropdown-item" href="#">Customer Service</a> <a class="dropdown-item" href="#">Make a complaint</a> <a class="dropdown-item" href="#">Report a user</a> </div>
+        </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> English </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown6"> <a class="dropdown-item" href="#">Espanol</a> <a class="dropdown-item" href="#">Русский</a> <a class="dropdown-item" href="#">Українська</a> </div>
+        </li>
+      </ul>
+      <p class="text-center px-2 mt-3">Welcome dear NoName</p>
+      <ul class="register nav navbar-nav navbar-right">
+        <li class="nav-item"> <a class="nav-link" href="#">Sign out</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<h1 class=" my-5 text-primary text-center">Shipment Delivered</h1>
+<div class="text-capitalize px-4">
+  <table id="myTable" class="table table-sm table-hover">
+    <thead>
+      <tr class="text-primary">
+        <th class="align-middle" data-priority="1" scope="col">Image</th>
+        <th class="align-middle" scope="col">stock #</th>
+        <th class="align-middle" scope="col">year</th>
+        <th class="align-middle" scope="col">make</th>
+        <th class="align-middle" scope="col">model</th>
+        <th class="align-middle" data-priority="2" scope="col">pickup date</th>
+        <th class="align-middle" data-priority="2" scope="col">delivery date</th>
+        <th class="align-middle" data-priority="3" scope="col">pickup location</th>
+        <th class="align-middle" data-priority="3" scope="col">deliver location</th>
+        <th class="align-middle" scope="col">App. retail value</th>
+        <th class="align-middle" data-priority="1" scope="col">price</th>
+        <th class="align-middle" scope="col">Company name</th>
+        <th class="align-middle" data-priority="1" scope="col">Delivered</th>
+        <th class="align-middle" scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="align-middle  " data-priority="1"><img class="rounded" src="https://picsum.photos/70" alt=""></td>
+        <td class="align-middle  ">#10778</td>
+        <td class="align-middle  ">2015</td>
+        <td class="align-middle  ">mako</td>
+        <td class="align-middle  "></td>
+        <td class="align-middle  " data-priority="2">9/15/19</td>
+        <td class="align-middle  " data-priority="2">9/18/19</td>
+        <td class="align-middle  " data-priority="3">GA-Atlanta</td>
+        <td class="align-middle  " data-priority="3">OH-Daytona</td>
+        <td class="align-middle  ">$350000</td>
+        <td class="align-middle  " data-priority="1">$3000<br>
+          $6.92/mile</td>
+        <td class="align-middle  ">Company name</td>
+        <td class="align-middle text-success">Delivered</td>
+        <td class="align-middle  "></td>
+      </tr>
+      <tr>
+        <td class="align-middle  " data-priority="1"><img class="rounded" src="https://picsum.photos/70" alt=""></td>
+        <td class="align-middle  ">#6577894</td>
+        <td class="align-middle  ">2016</td>
+        <td class="align-middle    ">BMW</td>
+        <td class="align-middle  ">550i</td>
+        <td class="align-middle  " data-priority="2">8/29/19</td>
+        <td class="align-middle  " data-priority="2">9/1/19</td>
+        <td class="align-middle  " data-priority="3">FL-Miami</td>
+        <td class="align-middle  " data-priority="3">NC-Mocksvil</td>
+        <td class="align-middle  ">$25000</td>
+        <td class="align-middle    " data-priority="1">$700<br>
+          $1.12/mile</td>
+        <td class="align-middle  ">Company name</td>
+        <td class="align-middle text-success">Delivered</td>
+        <td class="align-middle  "></td>
+      </tr>
+      <tr>
+        <td class="align-middle  " data-priority="1"><img class="rounded" src="https://picsum.photos/70" alt=""></td>
+        <td class="align-middle  ">#354982</td>
+        <td class="align-middle  ">2019</td>
+        <td class="align-middle  ">keystone</td>
+        <td class="align-middle  ">cougar</td>
+        <td class="align-middle  " data-priority="2">10/18/19</td>
+        <td class="align-middle  " data-priority="2">10/11/19</td>
+        <td class="align-middle  " data-priority="3">TX-Andrews</td>
+        <td class="align-middle  " data-priority="3">TX-Waco</td>
+        <td class="align-middle  ">$22000</td>
+        <td class="align-middle  " data-priority="1">987<br>
+          $2.25/mile</td>
+        <td class="align-middle  ">Company name</td>
+        <td class="align-middle text-success ">Delivered</td>
+        <td class="align-middle  "></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h1 class="text-warning text-uppercase text-center my-5">No items found for the search criteria specified</h1>
+<!-- footer-->
+<footer>
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-sm-4 col-12"> <a href="index.html">©DispatchUSA.com</a> <a href="#">All rights reserved</a> </div>
+      <div class="col-sm-4 col-12"> <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a> </div>
+      <div class="col-sm-4 col-12"> <a href="#">Developed: start point studio</a> </div>
+    </div>
+  </div>
+</footer>
+
+<!-- JQuery --> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<!-- Bootstrap tooltips --> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script> 
+<!-- Bootstrap core JavaScript --> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+<!-- Popper JS --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+<!--Bootstrap Datepicker js--> 
+<script src="../js/bootstrap-datepicker.min.js"></script> 
+<!-- datatable js--> 
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.js"></script> 
+<script type="text/javascript" src="../js/bootstrap-multiselect.js"></script> 
+<script src="../js/main.js"></script>
+</body>
+</html>

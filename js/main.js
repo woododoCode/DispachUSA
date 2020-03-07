@@ -5,9 +5,10 @@ $(document).ready(function () {
   //multiends
   $('#myTable').DataTable({
     responsive: {
-      details: {
-        type: 'column',
-        target: -1,
+        details: {
+            type: 'column',
+             target: 'tr'
+        },
         breakpoints: [{
             name: 'desktop',
             width: Infinity
@@ -30,14 +31,15 @@ $(document).ready(function () {
           }
         ],
 
-      }
-    },
+      },
     columnDefs: [{
       className: 'control',
       orderable: false,
-      targets: -1
-    }],
-    order: [1, 'asc']
+      targets: -1,
+    },
+      {order: [-1, 'asc']}
+    ],
+    
   });
   
 });
@@ -65,3 +67,12 @@ $(".imgAdd").click(function () {
 
     });
   });
+
+$(document).ready(function(){
+	$(".dropdown, .btn-group").hover(function(){
+		var dropdownMenu = $(this).children(".dropdown-menu");
+		if(dropdownMenu.is(":visible")){
+			dropdownMenu.parent().toggleClass("open");
+		}
+	});
+});

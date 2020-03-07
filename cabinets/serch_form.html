@@ -13,10 +13,9 @@
 <!--Fonts-->
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <!-- datatable css-->
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.css"/>
-  
-  <link rel="stylesheet" href="../css/bootstrap-multiselect.css" type="text/css">
+<!-- datatable css-->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.css"/>
+<link rel="stylesheet" href="../css/bootstrap-multiselect.css" type="text/css">
 <!--User css-->
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/registration.css">
@@ -36,18 +35,9 @@
         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> My Account </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">Transportation archive</a> <a class="dropdown-item" href="#">My Ratings</a> <a class="dropdown-item" href="#">Account Details</a> </div>
         </li>
-        <li class="nav-item active"> 
-          <a class="nav-link" href="#"> 
-            Search Now</a>
-          
-        </li>
-        <li class="nav-item dropdown"> 
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-            Messages </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown2"> 
-            <a class="dropdown-item" href="#">Sent</a> 
-            <a class="dropdown-item" href="#">Received</a> 
-          </div>
+        <li class="nav-item active"> <a class="nav-link" href="#"> Search Now</a> </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Messages </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="#">Sent</a> <a class="dropdown-item" href="#">Received</a> </div>
         </li>
         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Offers </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown3"> <a class="dropdown-item" href="#">Active Offers</a> <a class="dropdown-item" href="#">Declined Offers</a> <a class="dropdown-item" href="#">Expired Offers</a> </div>
@@ -72,8 +62,8 @@
 </nav>
 <!-- serch form -->
 <div class="container w-75 mt-5">
-<div class="col-md-5 col-12">
-  <h5>Search Category</h5>
+  <div class="col-md-5 col-12">
+    <h5>Search Category</h5>
     <select id="demo" multiple="multiple">
       <option value="Car">Car</option>
       <option value="Boat">Boat</option>
@@ -88,13 +78,11 @@
       <option value="ATV">ATV</option>
       <option value="Others">Others</option>
     </select>
-    </div>
   </div>
+</div>
 <div class="container w-75 mt-4">
   <div class="row d-flex justify-content-around"> 
     <!-- location-->
-    
-    
     
     <div class="col-md-5 col-12">
       <h5>From:</h5>
@@ -110,14 +98,14 @@
         <input id="inpuStateFrom" placeholder="State" class="form-control">
       </div>
       <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="City">
-          <select class="col-4 custom-select" id="areaFrom">
-            <option selected>+ radius, mi</option>
-            <option value="10">+10 mi</option>
-            <option value="25">+25 mi</option>
-            <option value="50">+50 mi </option>
-            <option value="100">+100 mi</option>
-          </select>
+        <input type="text" class="form-control" placeholder="City">
+        <select class="col-4 custom-select" id="areaFrom">
+          <option selected>+ radius, mi</option>
+          <option value="10">+10 mi</option>
+          <option value="25">+25 mi</option>
+          <option value="50">+50 mi </option>
+          <option value="100">+100 mi</option>
+        </select>
       </div>
       <div class="form-group">
         <input class="form-control" type="text" placeholder="ZIP Code">
@@ -138,14 +126,14 @@
         <input id="inpuStateTo" placeholder="State" class="form-control">
       </div>
       <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="City">
-          <select class="col-4 custom-select" id="areaTo">
-            <option selected>+ radius, mi</option>
-            <option value="10">+10 mi</option>
-            <option value="25">+25 mi</option>
-            <option value="50">+50 mi </option>
-            <option value="100">+100 mi</option>
-          </select>
+        <input type="text" class="form-control" placeholder="City">
+        <select class="col-4 custom-select" id="areaTo">
+          <option selected>+ radius, mi</option>
+          <option value="10">+10 mi</option>
+          <option value="25">+25 mi</option>
+          <option value="50">+50 mi </option>
+          <option value="100">+100 mi</option>
+        </select>
       </div>
       <div class="form-group">
         <input class="form-control" type="text" placeholder="ZIP Code">
@@ -153,154 +141,149 @@
     </div>
     <!-- location end--> 
     <!--mass and volume-->
-    <div class="col-md-5 col-12">
-      <h5>Weight:</h5>
-      <div class="d-inline-flex">
-        <div class="input-group mb-3 mr-1">
-          <input type="text" placeholder="From:" class="form-control px-1" aria-label="Amount (to the nearest dollar)">
-          <div class="input-group-append mb-5"> <span class="input-group-text">lb</span> </div>
+    <div class="conteiner">
+      <div class="row d-flex justify-content-around">
+        <div class="col-md-5 col-lg-5">
+          <h5>Weight:</h5>
+          <div class="d-inline-flex">
+            <div class="input-group mb-1 mr-1">
+              <input type="text" placeholder="From:" class="form-control px-1" aria-label="Amount (to the nearest dollar)">
+              <div class="input-group-append mb-1"> <span class="input-group-text">lb</span> </div>
+            </div>
+            <div class="text-center mx-3 mt-1 d-none d-sm-block d-md-block d-lg-block d-xl-block">&mdash;</div>
+            <div class="input-group mb-1 ml-1">
+              <input type="text" placeholder="To:" class="form-control px-1" aria-label="Amount (to the nearest dollar)">
+              <div class="input-group-append mb-1"> <span class="input-group-text">lb</span> </div>
+            </div>
+          </div>
+          <h5>Volume:</h5>
+          <div class="d-inline-flex">
+            <div class="input-group mb-3">
+              <input type="text" placeholder="Height" class="form-control px-1" aria-label="">
+              <div class="input-group-append mb-5"> <span class="input-group-text">ft</span> </div>
+            </div>
+            <div class="input-group mb-3 ml-1">
+              <input type="text" placeholder="Width" class="form-control px-1" aria-label="">
+              <div class="input-group-append mb-5"> <span class="input-group-text">ft</span> </div>
+            </div>
+            <div class="input-group mb-3 ml-1">
+              <input type="text" placeholder="Length" class="form-control px-1" aria-label="">
+              <div class="input-group-append mb-5"> <span class="input-group-text">ft</span> </div>
+            </div>
+          </div>
         </div>
-        <div class="text-center mx-3 mt-1 d-none d-sm-block d-md-block d-lg-block d-xl-block">&mdash;</div>
-        <div class="input-group mb-3 ml-1">
-          <input type="text" placeholder="To:" class="form-control px-1" aria-label="Amount (to the nearest dollar)">
-          <div class="input-group-append mb-5"> <span class="input-group-text">lb</span> </div>
+        <!-- mass and volume end--> 
+        <!--date picker-->
+        <div class="col-md-5 col-lg-5">
+          <h5>Pickup Date</h5>
+          <div class="d-inline-flex mb-2">
+            <div class="input-group date mr-1">
+              <input type="text" class="form-control datapicker px-1" placeholder="From:">
+            </div>
+            <div class="text-center mx-3 mt-1 d-none d-sm-block d-md-block d-lg-block d-xl-block">&mdash;</div>
+            <div class="input-group date ml-1">
+              <input type="text" class="form-control datapicker px-1" placeholder="To:">
+            </div>
+          </div>
+          <h5>Delivery Date</h5>
+          <div class="d-inline-flex">
+            <div class="input-group date mr-1">
+              <input type="text" class="form-control datapicker px-1" placeholder="From:">
+            </div>
+            <div class="text-center mx-3 mt-1 d-none d-sm-block d-md-block d-lg-block d-xl-block">&mdash;</div>
+            <div class="input-group date ml-1">
+              <input type="text" class="form-control datapicker px-1" placeholder="To:">
+            </div>
+          </div>
         </div>
+        <!--date picker end--> 
       </div>
     </div>
-    <div class="col-auto"></div>
-    <div class="col-md-5 col-12">
-      <h5>Volume:</h5>
-      <div class="d-inline-flex">
-        <div class="input-group mb-3 mr-1">
-          <input type="text" placeholder="From:" class="form-control px-1" aria-label="Amount (to the nearest dollar)">
-          <div class="input-group-append mb-5"> <span class="input-group-text">lb</span> </div>
-        </div>
-        <div class="text-center mx-3 mt-1 d-none d-sm-block d-md-block d-lg-block d-xl-block">&mdash;</div>
-        <div class="input-group mb-3 ml-1">
-          <input type="text" placeholder="To:" class="form-control px-1" aria-label="Amount (to the nearest dollar)">
-          <div class="input-group-append mb-5"> <span class="input-group-text">lb</span> </div>
-        </div>
-      </div>
-    </div>
-    <!-- mass and volume end--> 
-    <!--date picker-->
-    <div class="col-md-5 col-12">
-      <h5>Pickup Date</h5>
-      <div class="d-inline-flex mb-5">
-        <div class="input-group date mr-1">
-          <input type="text" class="form-control datapicker px-1" placeholder="From:">
-        </div>
-        <div class="text-center mx-3 mt-1 d-none d-sm-block d-md-block d-lg-block d-xl-block">&mdash;</div>
-        <div class="input-group date ml-1">
-          <input type="text" class="form-control datapicker px-1" placeholder="To:">
-        </div>
-      </div>
-    </div>
-    <div class="col-auto"></div>
-    <div class="col-md-5 col-12">
-      <h5>Delivery Date</h5>
-      <div class="d-inline-flex">
-        <div class="input-group date mr-1">
-          <input type="text" class="form-control datapicker px-1" placeholder="From:">
-        </div>
-        <div class="text-center mx-3 mt-1 d-none d-sm-block d-md-block d-lg-block d-xl-block">&mdash;</div>
-        <div class="input-group date ml-1">
-          <input type="text" class="form-control datapicker px-1" placeholder="To:">
-        </div>
-      </div>
-    </div>
-    <!--date picker end--> 
-    
   </div>
   <div class="my-5 mx-4">
     <button name="submit" type="submit" class="btn btn-primary btn-block btn-lg">Search&nbsp;<i class="fas fa-search"></i></button>
   </div>
 </div>
 <!--Search resaults-->
-  <div class="text-capitalize container-fluid px-5">
-    <table id="myTable" class="table table-sm table-hover">
-      <thead>
-        <tr class="text-primary">
-          <th class="align-middle " scope="col">
-            <div class="form-check d-none d-sm-block d-md-block d-lg-block d-xl-block">
-              <input class="form-check-input position-static" type="checkbox"  value="option1" aria-label="...">
-            </div>
-          </th>
-          <th class="align-middle " scope="col">Image</th>
-          <th class="align-middle" scope="col">stock #</th>
-          <th class="align-middle " scope="col">year</th>
-          <th class="align-middle mobile-p desktop" scope="col">make</th>
-          <th class="align-middle" scope="col">model</th>
-          <th class="align-middle" scope="col">pickup date</th>
-          <th class="align-middle" scope="col">delivery date</th>
-          <th class="align-middle " scope="col">pickup location</th>
-          <th class="align-middle " scope="col">deliver location</th>
-          <th class="align-middle " scope="col">App. retail value</th>
-          <th class="align-middle" scope="col">trip</th>
-          <th class="align-middle mobile-p desktop" scope="col">price</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="align-middle">
-            <div class="form-check">
-              <input class="form-check-input position-static" type="checkbox"  value="option1" aria-label="...">
-            </div>
-          </td>
-          <td class="align-middle "><img class="rounded" src="https://picsum.photos/70" alt=""></td>
-          <td class="align-middle">#10778</td>
-          <td class="align-middle ">2015</td>
-          <td class="align-middle mobile-p desktop">mako</td>
-          <td class="align-middle"></td>
-          <td class="align-middle">9/15/19</td>
-          <td class="align-middle">9/18/19</td>
-          <td class="align-middle ">GA-Atlanta</td>
-          <td class="align-middle ">OH-Daytona</td>
-          <td class="align-middle ">$350000</td>
-          <td class="align-middle">433 miles</td>
-          <td class="align-middle mobile-p desktop">$3000<br>$6.92/mile</td>
-        </tr>
-        <tr>
-          <td class="align-middle">
-            <div class="form-check">
-              <input class="form-check-input position-static" type="checkbox"  value="option1" aria-label="...">
-            </div>
-          </td>
-          <td class="align-middle "><img class="rounded" src="https://picsum.photos/70" alt=""></td>
-          <td class="align-middle">#6577894</td>
-          <td class="align-middle ">2016</td>
-          <td class="align-middle mobile-p desktop">BMW</td>
-          <td class="align-middle">550i</td>
-          <td class="align-middle">8/29/19</td>
-          <td class="align-middle">9/1/19</td>
-          <td class="align-middle ">FL-Miami</td>
-          <td class="align-middle ">NC-Mocksvil</td>
-          <td class="align-middle ">$25000</td>
-          <td class="align-middle">790 miles</td>
-          <td class="align-middle mobile-p desktop">$700<br>$1.12/mile</td>
-        </tr>
-        <tr>
-
-          <td class="align-middle">
-            <div class="form-check">
-              <input class="form-check-input position-static" type="checkbox"  value="option1" aria-label="...">
-            </div>
-          </td>
-          <td class="align-middle "><img class="rounded" src="https://picsum.photos/70" alt=""></td>
-          <td class="align-middle">#354982</td>
-          <td class="align-middle ">2019</td>
-          <td class="align-middle mobile-p desktop">keystone</td>
-          <td class="align-middle">cougar</td>
-          <td class="align-middle">10/18/19</td>
-          <td class="align-middle">10/11/19</td>
-          <td class="align-middle">TX-Andrews</td>
-          <td class="align-middle">TX-Waco</td>
-          <td class="align-middle ">$22000</td>
-          <td class="align-middle">355 miles</td>
-          <td class="align-middle mobile-p desktop">$800<br>$2.25/mile</td>
-        </tr>
-      </tbody>
-    </table>
+<div class="text-capitalize container-fluid px-5">
+  <table id="myTable" class="table table-sm table-hover">
+    <thead>
+      <tr class="text-primary">
+        <th class="align-middle " scope="col"> <div class="form-check d-none d-sm-block d-md-block d-lg-block d-xl-block">
+            <input class="form-check-input position-static" type="checkbox"  value="option1" aria-label="...">
+          </div>
+        </th>
+        <th class="align-middle " scope="col">Image</th>
+        <th class="align-middle" scope="col">stock #</th>
+        <th class="align-middle " scope="col">year</th>
+        <th class="align-middle mobile-p desktop" scope="col">make</th>
+        <th class="align-middle" scope="col">model</th>
+        <th class="align-middle" scope="col">pickup date</th>
+        <th class="align-middle" scope="col">delivery date</th>
+        <th class="align-middle " scope="col">pickup location</th>
+        <th class="align-middle " scope="col">deliver location</th>
+        <th class="align-middle " scope="col">App. retail value</th>
+        <th class="align-middle" scope="col">trip</th>
+        <th class="align-middle mobile-p desktop" scope="col">price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="align-middle"><div class="form-check">
+            <input class="form-check-input position-static" type="checkbox"  value="option1" aria-label="...">
+          </div></td>
+        <td class="align-middle "><img class="rounded" src="https://picsum.photos/70" alt=""></td>
+        <td class="align-middle">#10778</td>
+        <td class="align-middle ">2015</td>
+        <td class="align-middle mobile-p desktop">mako</td>
+        <td class="align-middle"></td>
+        <td class="align-middle">9/15/19</td>
+        <td class="align-middle">9/18/19</td>
+        <td class="align-middle ">GA-Atlanta</td>
+        <td class="align-middle ">OH-Daytona</td>
+        <td class="align-middle ">$350000</td>
+        <td class="align-middle">433 miles</td>
+        <td class="align-middle mobile-p desktop">$3000<br>
+          $6.92/mile</td>
+      </tr>
+      <tr>
+        <td class="align-middle"><div class="form-check">
+            <input class="form-check-input position-static" type="checkbox"  value="option1" aria-label="...">
+          </div></td>
+        <td class="align-middle "><img class="rounded" src="https://picsum.photos/70" alt=""></td>
+        <td class="align-middle">#6577894</td>
+        <td class="align-middle ">2016</td>
+        <td class="align-middle mobile-p desktop">BMW</td>
+        <td class="align-middle">550i</td>
+        <td class="align-middle">8/29/19</td>
+        <td class="align-middle">9/1/19</td>
+        <td class="align-middle ">FL-Miami</td>
+        <td class="align-middle ">NC-Mocksvil</td>
+        <td class="align-middle ">$25000</td>
+        <td class="align-middle">790 miles</td>
+        <td class="align-middle mobile-p desktop">$700<br>
+          $1.12/mile</td>
+      </tr>
+      <tr>
+        <td class="align-middle"><div class="form-check">
+            <input class="form-check-input position-static" type="checkbox"  value="option1" aria-label="...">
+          </div></td>
+        <td class="align-middle "><img class="rounded" src="https://picsum.photos/70" alt=""></td>
+        <td class="align-middle">#354982</td>
+        <td class="align-middle ">2019</td>
+        <td class="align-middle mobile-p desktop">keystone</td>
+        <td class="align-middle">cougar</td>
+        <td class="align-middle">10/18/19</td>
+        <td class="align-middle">10/11/19</td>
+        <td class="align-middle">TX-Andrews</td>
+        <td class="align-middle">TX-Waco</td>
+        <td class="align-middle ">$22000</td>
+        <td class="align-middle">355 miles</td>
+        <td class="align-middle mobile-p desktop">$800<br>
+          $2.25/mile</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!-- footer-->
 <footer>
@@ -313,23 +296,19 @@
   </div>
 </footer>
 
-
-
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <!-- Popper JS --> 
+<!-- JQuery --> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<!-- Bootstrap tooltips --> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script> 
+<!-- Bootstrap core JavaScript --> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+<!-- Popper JS --> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
 <!--Bootstrap Datepicker js--> 
 <script src="../js/bootstrap-datepicker.min.js"></script> 
-<!-- datatable js-->
-  <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.js"></script>
-  
-  <script type="text/javascript" src="../js/bootstrap-multiselect.js"></script>
-  
+<!-- datatable js--> 
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.js"></script> 
+<script type="text/javascript" src="../js/bootstrap-multiselect.js"></script> 
 <script src="../js/main.js"></script>
 </body>
 </html>
